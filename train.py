@@ -4,10 +4,12 @@ from pathlib import Path
 import ale_py
 import gymnasium as gym
 from gymnasium.wrappers import AtariPreprocessing, FrameStackObservation
+import numpy as np
 import torch
 import torch.optim as optim
+import torch.nn as nn
 
-from model import DQN, ReplayBuffer, preprocess_frame, train_dqn
+from model import DQN, ReplayBuffer, preprocess_frame
 
 gym.register_envs(ale_py)
 
@@ -33,6 +35,41 @@ NUM_EPISODES = 1000
 BATCH_SIZE = 32
 GAMMA = 0.99
 UPDATE_TARGET_EVERY = 1000
+
+
+def train_dqn(
+    env,
+    model,
+    target_model,
+    optimizer,
+    replay_buffer,
+    batch_size=32,
+    gamma=0.99,
+):
+    if len(replay_buffer) < batch_size:
+        return
+
+    # Sample a mini-batch from the replay buffer
+    batch = replay_buffer.sample(batch_size)
+    states, actions, rewards, next_states, dones = zip(*batch)
+
+    states = torch.FloatTensor(np.array(states))
+    actions = torch.LongTensor(actions)
+    rewards = torch.FloatTensor(rewards)
+    next_states = torch.FloatTensor(np.array(next_states))
+    dones = torch.FloatTensor(dones)
+
+    # Compute Q-values and target Q-values
+    current_q_values = model(states).gather(1, actions.unsqueeze(1))
+    next_q_values = target_model(next_states).max(1)[0].detach()
+    target_q_values = rewards + (1 - dones) * gamma * next_q_values
+
+    # Compute loss and update the model
+    loss = nn.MSELoss()(current_q_values, target_q_values.unsqueeze(1))
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+
 
 for episode in range(NUM_EPISODES):
     state, _ = env.reset()

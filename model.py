@@ -3,7 +3,6 @@ import random
 
 from PIL import Image
 
-import numpy as np
 import torch
 import torch.nn as nn
 
@@ -48,37 +47,3 @@ def preprocess_frame(frame):
     # frame = np.array(Image.fromarray(frame).resize((84, 84)))
     frame = frame / 255.0  # Normalize to [0, 1]
     return frame
-
-
-def train_dqn(
-    env,
-    model,
-    target_model,
-    optimizer,
-    replay_buffer,
-    batch_size=32,
-    gamma=0.99,
-):
-    if len(replay_buffer) < batch_size:
-        return
-
-    # Sample a mini-batch from the replay buffer
-    batch = replay_buffer.sample(batch_size)
-    states, actions, rewards, next_states, dones = zip(*batch)
-
-    states = torch.FloatTensor(np.array(states))
-    actions = torch.LongTensor(actions)
-    rewards = torch.FloatTensor(rewards)
-    next_states = torch.FloatTensor(np.array(next_states))
-    dones = torch.FloatTensor(dones)
-
-    # Compute Q-values and target Q-values
-    current_q_values = model(states).gather(1, actions.unsqueeze(1))
-    next_q_values = target_model(next_states).max(1)[0].detach()
-    target_q_values = rewards + (1 - dones) * gamma * next_q_values
-
-    # Compute loss and update the model
-    loss = nn.MSELoss()(current_q_values, target_q_values.unsqueeze(1))
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
