@@ -1,5 +1,6 @@
-import random
 from pathlib import Path
+import random
+import logging
 
 import ale_py
 import gymnasium as gym
@@ -10,6 +11,16 @@ import torch.optim as optim
 import torch.nn as nn
 
 from model import DQN, ReplayBuffer, preprocess_frame
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,  # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format="%(asctime)s - %(levelname)s - %(message)s",  # Define the log format
+    handlers=[
+        logging.FileHandler("logfile.txt"),  # Log to a file
+        logging.StreamHandler(),  # Log to the console
+    ],
+)
 
 gym.register_envs(ale_py)
 
@@ -110,6 +121,6 @@ for episode in range(NUM_EPISODES):
         torch.save(
             model.state_dict(), MODEL_DIR / f"pong_dqn_episode_{episode + 1}.pth"
         )
-        print(f"Model saved at episode {episode + 1}")
+        logging.info(f"Model saved at episode {episode + 1}")
 
-    print(f"Episode {episode + 1}, Total Reward: {total_reward}")
+    logging.info(f"Episode {episode + 1}, Total Reward: {total_reward}")
