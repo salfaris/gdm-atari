@@ -1,8 +1,6 @@
 from collections import deque
 import random
 
-from PIL import Image
-
 import torch
 import torch.nn as nn
 
