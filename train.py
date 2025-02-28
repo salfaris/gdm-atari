@@ -3,7 +3,7 @@ from pathlib import Path
 
 import ale_py
 import gymnasium as gym
-import numpy as np
+from gymnasium.wrappers import AtariPreprocessing, FrameStackObservation
 import torch
 import torch.optim as optim
 
@@ -15,6 +15,10 @@ MODEL_DIR = Path(__file__).resolve().parent / "model"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
 env = gym.make("ALE/Pong-v5", render_mode="rgb_array")
+env = AtariPreprocessing(
+    env, screen_size=84, grayscale_obs=True, frame_skip=1, noop_max=30
+)
+env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
 
 # Initialize models and replay buffer
@@ -33,7 +37,7 @@ UPDATE_TARGET_EVERY = 1000
 for episode in range(NUM_EPISODES):
     state, _ = env.reset()
     state = preprocess_frame(state)
-    state = np.stack([state] * 4, axis=0)  # Stack 4 frames
+    # state = np.stack([state] * 4, axis=0)  # Stack 4 frames
     done = False
     total_reward = 0
 
@@ -49,7 +53,7 @@ for episode in range(NUM_EPISODES):
         # Take action and observe next state
         next_state, reward, terminated, truncated, _ = env.step(action)
         next_state = preprocess_frame(next_state)
-        next_state = np.stack([next_state, state[0], state[1], state[2]], axis=0)
+        # next_state = np.stack([next_state, state[0], state[1], state[2]], axis=0)
         done = terminated or truncated
 
         # Store experience in replay buffer
