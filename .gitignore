@@ -1,6 +1,7 @@
 # Local
 .DS_Store
 *_old.py
+model*/**/*.pth
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
