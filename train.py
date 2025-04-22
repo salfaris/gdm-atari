@@ -1,3 +1,4 @@
+from datetime import datetime
 from pathlib import Path
 import random
 import logging
@@ -12,20 +13,27 @@ import torch.nn as nn
 
 from model import DQN, ReplayBuffer, preprocess_frame
 
+LOG_DIR = Path(__file__).resolve().parent / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+MODEL_DIR = Path(__file__).resolve().parent / "model_run_2"
+MODEL_DIR.mkdir(parents=True, exist_ok=True)
+
+# Logfiles
+start_datetime = datetime.now().strftime("%Y%m%d_%H%M")
+log_file = LOG_DIR / f"logfile_{start_datetime}.txt"
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,  # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
     format="%(asctime)s - %(levelname)s - %(message)s",  # Define the log format
     handlers=[
-        logging.FileHandler("logfile.txt"),  # Log to a file
+        logging.FileHandler(log_file),  # Log to a file
         logging.StreamHandler(),  # Log to the console
     ],
 )
 
 gym.register_envs(ale_py)
-
-MODEL_DIR = Path(__file__).resolve().parent / "model"
-MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
 env = gym.make("ALE/Pong-v5", render_mode="rgb_array")
 env = AtariPreprocessing(
