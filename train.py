@@ -13,6 +13,10 @@ import torch.nn as nn
 
 from model import DQN, ReplayBuffer, preprocess_frame
 
+# Set device
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
+
 LOG_DIR = Path(__file__).resolve().parent / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -43,8 +47,8 @@ env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
 
 # Initialize models and replay buffer
-model = DQN(action_dim)
-target_model = DQN(action_dim)
+model = DQN(action_dim).to(device)
+target_model = DQN(action_dim).to(device)
 target_model.load_state_dict(model.state_dict())
 optimizer = optim.Adam(model.parameters(), lr=0.0001)
 replay_buffer = ReplayBuffer(capacity=10000)
@@ -72,11 +76,11 @@ def train_dqn(
     batch = replay_buffer.sample(batch_size)
     states, actions, rewards, next_states, dones = zip(*batch)
 
-    states = torch.FloatTensor(np.array(states))
-    actions = torch.LongTensor(actions)
-    rewards = torch.FloatTensor(rewards)
-    next_states = torch.FloatTensor(np.array(next_states))
-    dones = torch.FloatTensor(dones)
+    states = torch.FloatTensor(np.array(states)).to(device)
+    actions = torch.LongTensor(actions).to(device)
+    rewards = torch.FloatTensor(rewards).to(device)
+    next_states = torch.FloatTensor(np.array(next_states)).to(device)
+    dones = torch.FloatTensor(dones).to(device)
 
     # Compute Q-values and target Q-values
     current_q_values = model(states).gather(1, actions.unsqueeze(1))
@@ -103,7 +107,7 @@ for episode in range(NUM_EPISODES):
         if random.random() < epsilon:
             action = env.action_space.sample()
         else:
-            q_values = model(torch.FloatTensor(state).unsqueeze(0))
+            q_values = model(torch.FloatTensor(state).unsqueeze(0).to(device))
             action = torch.argmax(q_values).item()
 
         # Take action and observe next state
