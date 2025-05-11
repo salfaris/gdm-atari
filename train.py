@@ -2,6 +2,7 @@ from datetime import datetime
 from pathlib import Path
 import random
 import logging
+import glob
 
 import ale_py
 import gymnasium as gym
@@ -13,14 +14,11 @@ import torch.nn as nn
 
 from model import DQN, ReplayBuffer, preprocess_frame
 
-# Set device
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Using device: {device}")
 
 LOG_DIR = Path(__file__).resolve().parent / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-MODEL_DIR = Path(__file__).resolve().parent / "model_run_2"
+MODEL_DIR = Path(__file__).resolve().parent / "model_run_4_mps"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
 # Logfiles
@@ -37,6 +35,24 @@ logging.basicConfig(
     ],
 )
 
+# Set device
+# Check that MPS is available
+if torch.backends.mps.is_available():
+    device = torch.device("mps")
+    if not torch.backends.mps.is_built():
+        print(
+            "MPS not available because the current PyTorch install was not "
+            "built with MPS enabled."
+        )
+    else:
+        print(
+            "MPS not available because the current MacOS version is not 12.3+ "
+            "and/or you do not have an MPS-enabled device on this machine."
+        )
+else:
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+logging.info(f"Using device: {device}")
+
 gym.register_envs(ale_py)
 
 env = gym.make("ALE/Pong-v5", render_mode="rgb_array")
@@ -46,18 +62,60 @@ env = AtariPreprocessing(
 env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
 
+
+def load_latest_model(model_dir):
+    # Load the model
+    model = DQN(action_dim).to(device)
+
+    """Load the latest saved model from the model directory."""
+    model_files = glob.glob(str(model_dir / "pong_dqn_episode_*.pth"))
+    if not model_files:
+        return model, 0
+
+    # Get the latest model file
+    latest_model = max(model_files, key=lambda x: int(x.split("_")[-1].split(".")[0]))
+    episode_num = int(latest_model.split("_")[-1].split(".")[0])
+    logging.info(f"Found latest_model @ {latest_model}")
+    # logging.info(f"Found latest_model @ {latest_model}")
+
+    logging.info(f"Loading latest_model @ {latest_model}")
+    model.load_state_dict(
+        torch.load(latest_model, map_location=device, weights_only=False)
+    )
+    logging.info(f"Loaded model from episode {episode_num}")
+
+    return model, episode_num
+
+
+# Training parameters
+NUM_EPISODES = 10000
+BATCH_SIZE = 64  # Increased from 32
+GAMMA = 0.99
+UPDATE_TARGET_EVERY = 100  # More frequent updates
+REPLAY_BUFFER_SIZE = 50000  # Increased from 10000
+LEARNING_RATE = 0.00025  # Adjusted learning rate
+EPSILON_START = 1.0
+EPSILON_END = 0.01
+EPSILON_DECAY = 0.995  # Slower decay
+MIN_REPLAY_SIZE = 1000  # Minimum experiences before training
+
 # Initialize models and replay buffer
 model = DQN(action_dim).to(device)
 target_model = DQN(action_dim).to(device)
-target_model.load_state_dict(model.state_dict())
-optimizer = optim.Adam(model.parameters(), lr=0.0001)
-replay_buffer = ReplayBuffer(capacity=10000)
 
-# Training parameters
-NUM_EPISODES = 1000
-BATCH_SIZE = 32
-GAMMA = 0.99
-UPDATE_TARGET_EVERY = 1000
+# Try to load the latest model
+loaded_model, start_episode = load_latest_model(
+    Path(__file__).resolve().parent / "model_run_3"
+)
+if loaded_model is not None:
+    model = loaded_model
+    target_model.load_state_dict(model.state_dict())
+    logging.info("Successfully loaded model and synchronized target model")
+else:
+    logging.info("No saved model found, starting from scratch")
+
+optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, eps=1e-4)
+replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
 
 
 def train_dqn(
@@ -66,8 +124,8 @@ def train_dqn(
     target_model,
     optimizer,
     replay_buffer,
-    batch_size=32,
-    gamma=0.99,
+    batch_size=BATCH_SIZE,
+    gamma=GAMMA,
 ):
     if len(replay_buffer) < batch_size:
         return
@@ -91,29 +149,36 @@ def train_dqn(
     loss = nn.MSELoss()(current_q_values, target_q_values.unsqueeze(1))
     optimizer.zero_grad()
     loss.backward()
+    # Gradient clipping to prevent exploding gradients
+    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
     optimizer.step()
 
+    return loss.item()
 
-for episode in range(NUM_EPISODES):
+
+# Training loop
+best_reward = float("-inf")
+epsilon = EPSILON_START
+
+for episode in range(start_episode, NUM_EPISODES):
     state, _ = env.reset()
     state = preprocess_frame(state)
-    # state = np.stack([state] * 4, axis=0)  # Stack 4 frames
     done = False
     total_reward = 0
+    episode_losses = []
 
     while not done:
         # Select action using epsilon-greedy policy
-        epsilon = max(0.1, 1.0 - episode / 500)  # Decay epsilon
         if random.random() < epsilon:
             action = env.action_space.sample()
         else:
-            q_values = model(torch.FloatTensor(state).unsqueeze(0).to(device))
-            action = torch.argmax(q_values).item()
+            with torch.no_grad():
+                q_values = model(torch.FloatTensor(state).unsqueeze(0).to(device))
+                action = torch.argmax(q_values).item()
 
         # Take action and observe next state
         next_state, reward, terminated, truncated, _ = env.step(action)
         next_state = preprocess_frame(next_state)
-        # next_state = np.stack([next_state, state[0], state[1], state[2]], axis=0)
         done = terminated or truncated
 
         # Store experience in replay buffer
@@ -121,12 +186,26 @@ for episode in range(NUM_EPISODES):
         state = next_state
         total_reward += reward
 
-        # Train the model
-        train_dqn(env, model, target_model, optimizer, replay_buffer, BATCH_SIZE, GAMMA)
+        # Train the model if we have enough experiences
+        if len(replay_buffer) > MIN_REPLAY_SIZE:
+            loss = train_dqn(
+                env, model, target_model, optimizer, replay_buffer, BATCH_SIZE, GAMMA
+            )
+            episode_losses.append(loss)
 
     # Update target network
     if episode % UPDATE_TARGET_EVERY == 0:
         target_model.load_state_dict(model.state_dict())
+        logging.info(f"Updated target network at episode {episode}")
+
+    # Update epsilon
+    epsilon = max(EPSILON_END, epsilon * EPSILON_DECAY)
+
+    # Save the model if it's the best so far
+    if total_reward > best_reward:
+        best_reward = total_reward
+        torch.save(model.state_dict(), MODEL_DIR / f"pong_dqn_best.pth")
+        logging.info(f"New best model saved with reward: {best_reward}")
 
     # Save the model periodically
     if (episode + 1) % 100 == 0:
@@ -135,4 +214,9 @@ for episode in range(NUM_EPISODES):
         )
         logging.info(f"Model saved at episode {episode + 1}")
 
-    logging.info(f"Episode {episode + 1}, Total Reward: {total_reward}")
+    # Log episode statistics
+    avg_loss = np.mean(episode_losses) if episode_losses else 0
+    logging.info(
+        f"Episode {episode + 1}, Total Reward: {total_reward}, "
+        f"Average Loss: {avg_loss:.4f}, Epsilon: {epsilon:.4f}"
+    )
