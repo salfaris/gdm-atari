@@ -12,14 +12,18 @@ import torch
 import torch.optim as optim
 import torch.nn as nn
 
-from model import DQN, ReplayBuffer, preprocess_frame
+from model import DQN, ReplayBuffer
 
 
 LOG_DIR = Path(__file__).resolve().parent / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-MODEL_DIR = Path(__file__).resolve().parent / "model_run_4_mps"
+MODEL_DIR = Path(__file__).resolve().parent / "model_run_5_gemini_fixed"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
+
+LOAD_MODEL_DIR = Path(__file__).resolve().parent / "model_run_5_gemini_fixed"
+if not LOAD_MODEL_DIR.exists:
+    raise ("LOAD_MODEL_DIR does not exist.")
 
 # Logfiles
 start_datetime = datetime.now().strftime("%Y%m%d_%H%M")
@@ -39,6 +43,7 @@ logging.basicConfig(
 # Check that MPS is available
 if torch.backends.mps.is_available():
     device = torch.device("mps")
+else:
     if not torch.backends.mps.is_built():
         print(
             "MPS not available because the current PyTorch install was not "
@@ -49,15 +54,20 @@ if torch.backends.mps.is_available():
             "MPS not available because the current MacOS version is not 12.3+ "
             "and/or you do not have an MPS-enabled device on this machine."
         )
-else:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 logging.info(f"Using device: {device}")
 
 gym.register_envs(ale_py)
 
-env = gym.make("ALE/Pong-v5", render_mode="rgb_array")
+env = gym.make(
+    "ALE/Pong-v5",
+    render_mode="rgb_array",
+    # frameskip=1 disables ALE's internal frameskip and allows `frame_skip=4`
+    # in AtariPreprocessing.
+    frameskip=1,
+)
 env = AtariPreprocessing(
-    env, screen_size=84, grayscale_obs=True, frame_skip=1, noop_max=30
+    env, screen_size=84, grayscale_obs=True, frame_skip=4, noop_max=30
 )
 env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
@@ -97,16 +107,14 @@ LEARNING_RATE = 0.00025  # Adjusted learning rate
 EPSILON_START = 1.0
 EPSILON_END = 0.01
 EPSILON_DECAY = 0.995  # Slower decay
-MIN_REPLAY_SIZE = 1000  # Minimum experiences before training
+MIN_REPLAY_SIZE = 20000  # Minimum experiences before training
 
 # Initialize models and replay buffer
 model = DQN(action_dim).to(device)
 target_model = DQN(action_dim).to(device)
 
 # Try to load the latest model
-loaded_model, start_episode = load_latest_model(
-    Path(__file__).resolve().parent / "model_run_3"
-)
+loaded_model, start_episode = load_latest_model(LOAD_MODEL_DIR)
 if loaded_model is not None:
     model = loaded_model
     target_model.load_state_dict(model.state_dict())
@@ -162,7 +170,7 @@ epsilon = EPSILON_START
 
 for episode in range(start_episode, NUM_EPISODES):
     state, _ = env.reset()
-    state = preprocess_frame(state)
+    state = np.array(state, dtype=np.float32)
     done = False
     total_reward = 0
     episode_losses = []
@@ -178,7 +186,7 @@ for episode in range(start_episode, NUM_EPISODES):
 
         # Take action and observe next state
         next_state, reward, terminated, truncated, _ = env.step(action)
-        next_state = preprocess_frame(next_state)
+        next_state = np.array(next_state, dtype=np.float32)
         done = terminated or truncated
 
         # Store experience in replay buffer
