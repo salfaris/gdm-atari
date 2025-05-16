@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+import pickle
 import random
 import logging
 import glob
@@ -18,10 +19,10 @@ from model import DQN, ReplayBuffer
 LOG_DIR = Path(__file__).resolve().parent / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-MODEL_DIR = Path(__file__).resolve().parent / "model_run_5_gemini_fixed"
+MODEL_DIR = Path(__file__).resolve().parent / "model_run_6"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
-LOAD_MODEL_DIR = Path(__file__).resolve().parent / "model_run_5_gemini_fixed"
+LOAD_MODEL_DIR = MODEL_DIR
 if not LOAD_MODEL_DIR.exists:
     raise ("LOAD_MODEL_DIR does not exist.")
 
@@ -73,6 +74,36 @@ env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
 
 
+def save_checkpoint(model, optimizer, replay_buffer, episode, step, checkpoint_path):
+    checkpoint = {
+        "model_state_dict": model.state_dict(),
+        "optimizer_state_dict": optimizer.state_dict(),
+        "replay_buffer": replay_buffer,
+        "episode": episode,
+        "step": step,
+    }
+    with open(checkpoint_path, "wb") as f:
+        pickle.dump(checkpoint, f)
+    logging.info(f"Saved checkpoint to {checkpoint_path}")
+
+
+def load_latest_checkpoint(model_dir, model, optimizer):
+    checkpoint_files = sorted(model_dir.glob("checkpoint.pkl"))
+    if not checkpoint_files:
+        return None, 0, 0  # No checkpoint found
+
+    latest = checkpoint_files[-1]
+    with open(latest, "rb") as f:
+        checkpoint = pickle.load(f)
+    model.load_state_dict(checkpoint["model_state_dict"])
+    optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+    replay_buffer = checkpoint["replay_buffer"]
+    episode = checkpoint["episode"]
+    step = checkpoint["step"]
+    logging.info(f"Loaded checkpoint from {latest}")
+    return replay_buffer, episode, step
+
+
 def load_latest_model(model_dir):
     # Load the model
     model = DQN(action_dim).to(device)
@@ -109,12 +140,14 @@ EPSILON_END = 0.01
 EPSILON_DECAY = 0.995  # Slower decay
 MIN_REPLAY_SIZE = 20000  # Minimum experiences before training
 
+
 # Initialize models and replay buffer
 model = DQN(action_dim).to(device)
 target_model = DQN(action_dim).to(device)
 
 # Try to load the latest model
 loaded_model, start_episode = load_latest_model(LOAD_MODEL_DIR)
+step_count = 0
 if loaded_model is not None:
     model = loaded_model
     target_model.load_state_dict(model.state_dict())
@@ -123,7 +156,14 @@ else:
     logging.info("No saved model found, starting from scratch")
 
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, eps=1e-4)
-replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
+
+# <-- Dynamically load latest checkpoint if any
+replay_buffer, start_episode, step_count = load_latest_checkpoint(
+    MODEL_DIR, model, optimizer
+)
+if replay_buffer is None:
+    replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
+    logging.info("No checkpoint found, starting fresh.")
 
 
 def train_dqn(
@@ -176,6 +216,7 @@ for episode in range(start_episode, NUM_EPISODES):
     episode_losses = []
 
     while not done:
+        step_count += 1
         # Select action using epsilon-greedy policy
         if random.random() < epsilon:
             action = env.action_space.sample()
@@ -212,15 +253,23 @@ for episode in range(start_episode, NUM_EPISODES):
     # Save the model if it's the best so far
     if total_reward > best_reward:
         best_reward = total_reward
-        torch.save(model.state_dict(), MODEL_DIR / f"pong_dqn_best.pth")
+        torch.save(model.state_dict(), MODEL_DIR / "pong_dqn_best.pth")
         logging.info(f"New best model saved with reward: {best_reward}")
 
-    # Save the model periodically
+    # <-- Save checkpoint every 100 episodes
     if (episode + 1) % 100 == 0:
-        torch.save(
-            model.state_dict(), MODEL_DIR / f"pong_dqn_episode_{episode + 1}.pth"
+        checkpoint_path = MODEL_DIR / "checkpoint.pkl"
+        save_checkpoint(
+            model, optimizer, replay_buffer, episode, step_count, checkpoint_path
         )
-        logging.info(f"Model saved at episode {episode + 1}")
+        logging.info(f"Checkpointing at episode {episode + 1}")
+
+    # # Save the model periodically
+    # if (episode + 1) % 100 == 0:
+    #     torch.save(
+    #         model.state_dict(), MODEL_DIR / f"pong_dqn_episode_{episode + 1}.pth"
+    #     )
+    #     logging.info(f"Model saved at episode {episode + 1}")
 
     # Log episode statistics
     avg_loss = np.mean(episode_losses) if episode_losses else 0
