@@ -74,13 +74,16 @@ env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
 
 
-def save_checkpoint(model, optimizer, replay_buffer, episode, step, checkpoint_path):
+def save_checkpoint(
+    model, optimizer, replay_buffer, episode, step, best_reward, checkpoint_path
+):
     checkpoint = {
         "model_state_dict": model.state_dict(),
         "optimizer_state_dict": optimizer.state_dict(),
         "replay_buffer": replay_buffer,
         "episode": episode,
         "step": step,
+        "best_reward": best_reward,
     }
     with open(checkpoint_path, "wb") as f:
         pickle.dump(checkpoint, f)
@@ -101,7 +104,8 @@ def load_latest_checkpoint(model_dir, model, optimizer):
     episode = checkpoint["episode"]
     step = checkpoint["step"]
     logging.info(f"Loaded checkpoint from {latest}")
-    return replay_buffer, episode, step
+    best_reward = checkpoint.get("best_reward", float("-inf"))
+    return replay_buffer, episode, step, best_reward
 
 
 def load_latest_model(model_dir):
@@ -157,14 +161,6 @@ else:
 
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, eps=1e-4)
 
-# <-- Dynamically load latest checkpoint if any
-replay_buffer, start_episode, step_count = load_latest_checkpoint(
-    MODEL_DIR, model, optimizer
-)
-if replay_buffer is None:
-    replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
-    logging.info("No checkpoint found, starting fresh.")
-
 
 def train_dqn(
     env,
@@ -207,6 +203,13 @@ def train_dqn(
 # Training loop
 best_reward = float("-inf")
 epsilon = EPSILON_START
+
+replay_buffer, start_episode, step_count, best_reward = load_latest_checkpoint(
+    MODEL_DIR, model, optimizer
+)
+if replay_buffer is None:
+    replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
+    logging.info("No checkpoint found, starting fresh.")
 
 for episode in range(start_episode, NUM_EPISODES):
     state, _ = env.reset()
@@ -260,7 +263,13 @@ for episode in range(start_episode, NUM_EPISODES):
     if (episode + 1) % 100 == 0:
         checkpoint_path = MODEL_DIR / "checkpoint.pkl"
         save_checkpoint(
-            model, optimizer, replay_buffer, episode, step_count, checkpoint_path
+            model,
+            optimizer,
+            replay_buffer,
+            episode,
+            step_count,
+            best_reward,
+            checkpoint_path,
         )
         logging.info(f"Checkpointing at episode {episode + 1}")
 
