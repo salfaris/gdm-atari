@@ -22,9 +22,11 @@ LOG_DIR.mkdir(parents=True, exist_ok=True)
 MODEL_DIR = Path(__file__).resolve().parent / "model_run_6"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
-LOAD_MODEL_DIR = MODEL_DIR
-if not LOAD_MODEL_DIR.exists:
-    raise ("LOAD_MODEL_DIR does not exist.")
+CHECKPOINT_PATH = MODEL_DIR / "checkpoint.pkl"
+
+# LOAD_MODEL_DIR = MODEL_DIR
+# if not LOAD_MODEL_DIR.exists:
+#     raise ("LOAD_MODEL_DIR does not exist.")
 
 # Logfiles
 start_datetime = datetime.now().strftime("%Y%m%d_%H%M")
@@ -75,11 +77,19 @@ action_dim = env.action_space.n
 
 
 def save_checkpoint(
-    model, optimizer, replay_buffer, episode, step, best_reward, checkpoint_path
+    model,
+    optimizer,
+    target_model,
+    replay_buffer,
+    episode,
+    step,
+    best_reward,
+    checkpoint_path,
 ):
     checkpoint = {
         "model_state_dict": model.state_dict(),
         "optimizer_state_dict": optimizer.state_dict(),
+        "target_model_state_dict": target_model.state_dict(),
         "replay_buffer": replay_buffer,
         "episode": episode,
         "step": step,
@@ -90,46 +100,43 @@ def save_checkpoint(
     logging.info(f"Saved checkpoint to {checkpoint_path}")
 
 
-def load_latest_checkpoint(model_dir, model, optimizer):
-    checkpoint_files = sorted(model_dir.glob("checkpoint.pkl"))
-    if not checkpoint_files:
-        return None, 0, 0  # No checkpoint found
-
-    latest = checkpoint_files[-1]
-    with open(latest, "rb") as f:
+def load_latest_checkpoint(checkpoint_path: Path, model, optimizer, target_model):
+    with open(checkpoint_path, "rb") as f:
         checkpoint = pickle.load(f)
     model.load_state_dict(checkpoint["model_state_dict"])
     optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+    target_model.load_state_dict(checkpoint["target_model_state_dict"])
     replay_buffer = checkpoint["replay_buffer"]
     episode = checkpoint["episode"]
     step = checkpoint["step"]
-    logging.info(f"Loaded checkpoint from {latest}")
-    best_reward = checkpoint.get("best_reward", float("-inf"))
+    best_reward = checkpoint["best_reward"]
+
+    logging.info(f"Loaded checkpoint from {checkpoint_path}")
     return replay_buffer, episode, step, best_reward
 
 
-def load_latest_model(model_dir):
-    # Load the model
-    model = DQN(action_dim).to(device)
+# def load_latest_model(model_dir):
+#     # Load the model
+#     model = DQN(action_dim).to(device)
 
-    """Load the latest saved model from the model directory."""
-    model_files = glob.glob(str(model_dir / "pong_dqn_episode_*.pth"))
-    if not model_files:
-        return model, 0
+#     """Load the latest saved model from the model directory."""
+#     model_files = glob.glob(str(model_dir / "pong_dqn_episode_*.pth"))
+#     if not model_files:
+#         return model, 0
 
-    # Get the latest model file
-    latest_model = max(model_files, key=lambda x: int(x.split("_")[-1].split(".")[0]))
-    episode_num = int(latest_model.split("_")[-1].split(".")[0])
-    logging.info(f"Found latest_model @ {latest_model}")
-    # logging.info(f"Found latest_model @ {latest_model}")
+#     # Get the latest model file
+#     latest_model = max(model_files, key=lambda x: int(x.split("_")[-1].split(".")[0]))
+#     episode_num = int(latest_model.split("_")[-1].split(".")[0])
+#     logging.info(f"Found latest_model @ {latest_model}")
+#     # logging.info(f"Found latest_model @ {latest_model}")
 
-    logging.info(f"Loading latest_model @ {latest_model}")
-    model.load_state_dict(
-        torch.load(latest_model, map_location=device, weights_only=False)
-    )
-    logging.info(f"Loaded model from episode {episode_num}")
+#     logging.info(f"Loading latest_model @ {latest_model}")
+#     model.load_state_dict(
+#         torch.load(latest_model, map_location=device, weights_only=False)
+#     )
+#     logging.info(f"Loaded model from episode {episode_num}")
 
-    return model, episode_num
+#     return model, episode_num
 
 
 # Training parameters
@@ -149,15 +156,14 @@ MIN_REPLAY_SIZE = 20000  # Minimum experiences before training
 model = DQN(action_dim).to(device)
 target_model = DQN(action_dim).to(device)
 
-# Try to load the latest model
-loaded_model, start_episode = load_latest_model(LOAD_MODEL_DIR)
-step_count = 0
-if loaded_model is not None:
-    model = loaded_model
-    target_model.load_state_dict(model.state_dict())
-    logging.info("Successfully loaded model and synchronized target model")
-else:
-    logging.info("No saved model found, starting from scratch")
+# # Try to load the latest model
+# loaded_model, start_episode = load_latest_model(LOAD_MODEL_DIR)
+# if loaded_model is not None:
+#     model = loaded_model
+#     target_model.load_state_dict(model.state_dict())
+#     logging.info("Successfully loaded model and synchronized target model")
+# else:
+#     logging.info("No saved model found, starting from scratch")
 
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, eps=1e-4)
 
@@ -201,15 +207,18 @@ def train_dqn(
 
 
 # Training loop
-best_reward = float("-inf")
-epsilon = EPSILON_START
-
-replay_buffer, start_episode, step_count, best_reward = load_latest_checkpoint(
-    MODEL_DIR, model, optimizer
-)
-if replay_buffer is None:
+if not CHECKPOINT_PATH.exists():
+    best_reward = float("-inf")
+    start_episode = 0
+    step_count = 0
     replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
     logging.info("No checkpoint found, starting fresh.")
+else:
+    replay_buffer, start_episode, step_count, best_reward = load_latest_checkpoint(
+        CHECKPOINT_PATH, model, optimizer, target_model
+    )
+
+epsilon = EPSILON_START
 
 for episode in range(start_episode, NUM_EPISODES):
     state, _ = env.reset()
@@ -261,15 +270,15 @@ for episode in range(start_episode, NUM_EPISODES):
 
     # <-- Save checkpoint every 100 episodes
     if (episode + 1) % 100 == 0:
-        checkpoint_path = MODEL_DIR / "checkpoint.pkl"
         save_checkpoint(
             model,
             optimizer,
+            target_model,
             replay_buffer,
             episode,
             step_count,
             best_reward,
-            checkpoint_path,
+            CHECKPOINT_PATH,
         )
         logging.info(f"Checkpointing at episode {episode + 1}")
 
