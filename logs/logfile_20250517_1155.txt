@@ -1,0 +1,1731 @@
+2025-05-17 11:55:06,767 - INFO - Using device: mps
+2025-05-17 11:55:07,437 - INFO - No checkpoint found, starting fresh.
+2025-05-17 11:55:09,116 - INFO - Updated target network at episode 0
+2025-05-17 11:55:09,138 - INFO - New best model saved with reward: -21.0
+2025-05-17 11:55:09,262 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 0
+        STEP: 849
+        BEST REWARD: -21.0
+        EPSILON: 0.9950
+        ------------------------------------------------------------
+        
+2025-05-17 11:55:09,262 - INFO - Checkpointing at episode 0
+2025-05-17 11:55:09,262 - INFO - Episode 0, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9950
+2025-05-17 11:55:10,148 - INFO - New best model saved with reward: -18.0
+2025-05-17 11:55:10,148 - INFO - Episode 1, Total Reward: -18.0, Average Loss: 0.0000, Epsilon: 0.9900
+2025-05-17 11:55:10,836 - INFO - Episode 2, Total Reward: -19.0, Average Loss: 0.0000, Epsilon: 0.9851
+2025-05-17 11:55:11,384 - INFO - Episode 3, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9801
+2025-05-17 11:55:11,917 - INFO - Episode 4, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9752
+2025-05-17 11:55:12,633 - INFO - Episode 5, Total Reward: -19.0, Average Loss: 0.0000, Epsilon: 0.9704
+2025-05-17 11:55:13,337 - INFO - Episode 6, Total Reward: -20.0, Average Loss: 0.0000, Epsilon: 0.9655
+2025-05-17 11:55:14,091 - INFO - Episode 7, Total Reward: -19.0, Average Loss: 0.0000, Epsilon: 0.9607
+2025-05-17 11:55:14,726 - INFO - Episode 8, Total Reward: -20.0, Average Loss: 0.0000, Epsilon: 0.9559
+2025-05-17 11:55:15,375 - INFO - Episode 9, Total Reward: -20.0, Average Loss: 0.0000, Epsilon: 0.9511
+2025-05-17 11:55:18,828 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 10
+        STEP: 10,362
+        BEST REWARD: -18.0
+        EPSILON: 0.9464
+        ------------------------------------------------------------
+        
+2025-05-17 11:55:18,829 - INFO - Checkpointing at episode 10
+2025-05-17 11:55:18,829 - INFO - Episode 10, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9464
+2025-05-17 11:55:20,005 - INFO - Episode 11, Total Reward: -20.0, Average Loss: 0.0000, Epsilon: 0.9416
+2025-05-17 11:55:20,897 - INFO - Episode 12, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9369
+2025-05-17 11:55:21,554 - INFO - Episode 13, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9322
+2025-05-17 11:55:22,181 - INFO - Episode 14, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9276
+2025-05-17 11:55:22,880 - INFO - Episode 15, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9229
+2025-05-17 11:55:23,539 - INFO - Episode 16, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9183
+2025-05-17 11:55:24,170 - INFO - Episode 17, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9137
+2025-05-17 11:55:24,819 - INFO - Episode 18, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9092
+2025-05-17 11:55:25,448 - INFO - Episode 19, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9046
+2025-05-17 11:55:30,804 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 20
+        STEP: 18,348
+        BEST REWARD: -18.0
+        EPSILON: 0.9001
+        ------------------------------------------------------------
+        
+2025-05-17 11:55:30,806 - INFO - Checkpointing at episode 20
+2025-05-17 11:55:30,806 - INFO - Episode 20, Total Reward: -21.0, Average Loss: 0.0000, Epsilon: 0.9001
+2025-05-17 11:55:31,857 - INFO - Episode 21, Total Reward: -20.0, Average Loss: 0.0000, Epsilon: 0.8956
+2025-05-17 11:55:35,691 - INFO - Episode 22, Total Reward: -21.0, Average Loss: 0.1888, Epsilon: 0.8911
+2025-05-17 11:55:54,237 - INFO - Episode 23, Total Reward: -20.0, Average Loss: 0.0374, Epsilon: 0.8867
+2025-05-17 11:56:09,183 - INFO - Episode 24, Total Reward: -21.0, Average Loss: 0.0165, Epsilon: 0.8822
+2025-05-17 11:56:26,838 - INFO - Episode 25, Total Reward: -21.0, Average Loss: 0.0117, Epsilon: 0.8778
+2025-05-17 11:56:41,937 - INFO - Episode 26, Total Reward: -20.0, Average Loss: 0.0094, Epsilon: 0.8734
+2025-05-17 11:56:56,653 - INFO - Episode 27, Total Reward: -21.0, Average Loss: 0.0060, Epsilon: 0.8691
+2025-05-17 11:57:15,481 - INFO - Episode 28, Total Reward: -20.0, Average Loss: 0.0069, Epsilon: 0.8647
+2025-05-17 11:57:32,657 - INFO - Episode 29, Total Reward: -21.0, Average Loss: 0.0045, Epsilon: 0.8604
+2025-05-17 11:58:00,888 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 30
+        STEP: 27,383
+        BEST REWARD: -18.0
+        EPSILON: 0.8561
+        ------------------------------------------------------------
+        
+2025-05-17 11:58:00,891 - INFO - Checkpointing at episode 30
+2025-05-17 11:58:00,892 - INFO - Episode 30, Total Reward: -20.0, Average Loss: 0.0028, Epsilon: 0.8561
+2025-05-17 11:58:20,653 - INFO - Episode 31, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.8518
+2025-05-17 11:58:40,741 - INFO - Episode 32, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.8475
+2025-05-17 11:58:58,053 - INFO - Episode 33, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.8433
+2025-05-17 11:59:21,039 - INFO - Episode 34, Total Reward: -20.0, Average Loss: 0.0011, Epsilon: 0.8391
+2025-05-17 11:59:44,577 - INFO - Episode 35, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.8349
+2025-05-17 12:00:01,740 - INFO - Episode 36, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.8307
+2025-05-17 12:00:23,177 - INFO - Episode 37, Total Reward: -18.0, Average Loss: 0.0011, Epsilon: 0.8266
+2025-05-17 12:00:41,454 - INFO - Episode 38, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.8224
+2025-05-17 12:00:58,760 - INFO - Episode 39, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.8183
+2025-05-17 12:01:24,459 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 40
+        STEP: 36,895
+        BEST REWARD: -18.0
+        EPSILON: 0.8142
+        ------------------------------------------------------------
+        
+2025-05-17 12:01:24,460 - INFO - Checkpointing at episode 40
+2025-05-17 12:01:24,461 - INFO - Episode 40, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.8142
+2025-05-17 12:01:44,276 - INFO - Episode 41, Total Reward: -19.0, Average Loss: 0.0010, Epsilon: 0.8102
+2025-05-17 12:02:05,244 - INFO - Episode 42, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.8061
+2025-05-17 12:02:24,342 - INFO - Episode 43, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.8021
+2025-05-17 12:02:42,814 - INFO - Episode 44, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.7981
+2025-05-17 12:03:05,211 - INFO - Episode 45, Total Reward: -19.0, Average Loss: 0.0010, Epsilon: 0.7941
+2025-05-17 12:03:22,475 - INFO - Episode 46, Total Reward: -20.0, Average Loss: 0.0009, Epsilon: 0.7901
+2025-05-17 12:03:44,641 - INFO - Episode 47, Total Reward: -20.0, Average Loss: 0.0009, Epsilon: 0.7862
+2025-05-17 12:04:05,811 - INFO - Episode 48, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.7822
+2025-05-17 12:04:24,319 - INFO - Episode 49, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.7783
+2025-05-17 12:04:56,086 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 50
+        STEP: 46,438
+        BEST REWARD: -18.0
+        EPSILON: 0.7744
+        ------------------------------------------------------------
+        
+2025-05-17 12:04:56,087 - INFO - Checkpointing at episode 50
+2025-05-17 12:04:56,088 - INFO - Episode 50, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.7744
+2025-05-17 12:05:12,679 - INFO - Episode 51, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.7705
+2025-05-17 12:05:28,379 - INFO - Episode 52, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.7667
+2025-05-17 12:05:46,209 - INFO - Episode 53, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.7629
+2025-05-17 12:06:08,827 - INFO - Episode 54, Total Reward: -19.0, Average Loss: 0.0009, Epsilon: 0.7590
+2025-05-17 12:06:30,517 - INFO - Episode 55, Total Reward: -18.0, Average Loss: 0.0007, Epsilon: 0.7553
+2025-05-17 12:06:51,679 - INFO - Episode 56, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.7515
+2025-05-17 12:07:12,110 - INFO - Episode 57, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.7477
+2025-05-17 12:07:37,211 - INFO - Episode 58, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.7440
+2025-05-17 12:07:58,715 - INFO - Episode 59, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.7403
+2025-05-17 12:08:34,133 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 60
+        STEP: 55,457
+        BEST REWARD: -18.0
+        EPSILON: 0.7366
+        ------------------------------------------------------------
+        
+2025-05-17 12:08:34,135 - INFO - Checkpointing at episode 60
+2025-05-17 12:08:34,135 - INFO - Episode 60, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.7366
+2025-05-17 12:08:56,521 - INFO - Episode 61, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.7329
+2025-05-17 12:09:25,342 - INFO - New best model saved with reward: -17.0
+2025-05-17 12:09:25,344 - INFO - Episode 62, Total Reward: -17.0, Average Loss: 0.0005, Epsilon: 0.7292
+2025-05-17 12:09:47,993 - INFO - Episode 63, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.7256
+2025-05-17 12:10:04,872 - INFO - Episode 64, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.7219
+2025-05-17 12:10:23,630 - INFO - Episode 65, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.7183
+2025-05-17 12:10:44,701 - INFO - Episode 66, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.7147
+2025-05-17 12:11:04,020 - INFO - Episode 67, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.7112
+2025-05-17 12:11:21,866 - INFO - Episode 68, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.7076
+2025-05-17 12:11:45,324 - INFO - Episode 69, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.7041
+2025-05-17 12:12:16,376 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 70
+        STEP: 64,969
+        BEST REWARD: -17.0
+        EPSILON: 0.7005
+        ------------------------------------------------------------
+        
+2025-05-17 12:12:16,377 - INFO - Checkpointing at episode 70
+2025-05-17 12:12:16,377 - INFO - Episode 70, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.7005
+2025-05-17 12:12:37,501 - INFO - Episode 71, Total Reward: -19.0, Average Loss: 0.0005, Epsilon: 0.6970
+2025-05-17 12:12:54,113 - INFO - Episode 72, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.6936
+2025-05-17 12:13:11,201 - INFO - Episode 73, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.6901
+2025-05-17 12:13:31,398 - INFO - Episode 74, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.6866
+2025-05-17 12:13:51,971 - INFO - Episode 75, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.6832
+2025-05-17 12:14:08,297 - INFO - Episode 76, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.6798
+2025-05-17 12:14:25,492 - INFO - Episode 77, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.6764
+2025-05-17 12:14:49,194 - INFO - Episode 78, Total Reward: -19.0, Average Loss: 0.0005, Epsilon: 0.6730
+2025-05-17 12:15:13,281 - INFO - Episode 79, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.6696
+2025-05-17 12:15:43,350 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 80
+        STEP: 73,792
+        BEST REWARD: -17.0
+        EPSILON: 0.6663
+        ------------------------------------------------------------
+        
+2025-05-17 12:15:43,352 - INFO - Checkpointing at episode 80
+2025-05-17 12:15:43,353 - INFO - Episode 80, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.6663
+2025-05-17 12:16:11,629 - INFO - Episode 81, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.6630
+2025-05-17 12:16:34,260 - INFO - Episode 82, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.6597
+2025-05-17 12:16:55,921 - INFO - Episode 83, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.6564
+2025-05-17 12:17:20,535 - INFO - Episode 84, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.6531
+2025-05-17 12:17:44,003 - INFO - Episode 85, Total Reward: -18.0, Average Loss: 0.0007, Epsilon: 0.6498
+2025-05-17 12:18:08,258 - INFO - Episode 86, Total Reward: -17.0, Average Loss: 0.0006, Epsilon: 0.6466
+2025-05-17 12:18:27,743 - INFO - Episode 87, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.6433
+2025-05-17 12:18:48,446 - INFO - Episode 88, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.6401
+2025-05-17 12:19:07,664 - INFO - Episode 89, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.6369
+2025-05-17 12:19:37,057 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 90
+        STEP: 83,207
+        BEST REWARD: -17.0
+        EPSILON: 0.6337
+        ------------------------------------------------------------
+        
+2025-05-17 12:19:37,058 - INFO - Checkpointing at episode 90
+2025-05-17 12:19:37,059 - INFO - Episode 90, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.6337
+2025-05-17 12:20:00,905 - INFO - Episode 91, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.6306
+2025-05-17 12:20:20,298 - INFO - Episode 92, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.6274
+2025-05-17 12:20:37,679 - INFO - Episode 93, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.6243
+2025-05-17 12:20:57,800 - INFO - Episode 94, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.6211
+2025-05-17 12:21:15,704 - INFO - Episode 95, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.6180
+2025-05-17 12:21:33,638 - INFO - Episode 96, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.6149
+2025-05-17 12:21:52,465 - INFO - Episode 97, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.6119
+2025-05-17 12:22:10,209 - INFO - Episode 98, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.6088
+2025-05-17 12:22:28,960 - INFO - Episode 99, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.6058
+2025-05-17 12:22:48,559 - INFO - Updated target network at episode 100
+2025-05-17 12:23:06,487 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 100
+        STEP: 92,001
+        BEST REWARD: -17.0
+        EPSILON: 0.6027
+        ------------------------------------------------------------
+        
+2025-05-17 12:23:06,489 - INFO - Checkpointing at episode 100
+2025-05-17 12:23:06,490 - INFO - Episode 100, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.6027
+2025-05-17 12:23:29,230 - INFO - Episode 101, Total Reward: -19.0, Average Loss: 0.0086, Epsilon: 0.5997
+2025-05-17 12:23:49,507 - INFO - Episode 102, Total Reward: -21.0, Average Loss: 0.0026, Epsilon: 0.5967
+2025-05-17 12:24:09,818 - INFO - Episode 103, Total Reward: -20.0, Average Loss: 0.0023, Epsilon: 0.5937
+2025-05-17 12:24:31,964 - INFO - Episode 104, Total Reward: -21.0, Average Loss: 0.0018, Epsilon: 0.5908
+2025-05-17 12:24:52,129 - INFO - Episode 105, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.5878
+2025-05-17 12:25:09,976 - INFO - Episode 106, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.5849
+2025-05-17 12:25:29,515 - INFO - Episode 107, Total Reward: -20.0, Average Loss: 0.0010, Epsilon: 0.5820
+2025-05-17 12:25:46,838 - INFO - Episode 108, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.5790
+2025-05-17 12:26:04,021 - INFO - Episode 109, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.5762
+2025-05-17 12:26:43,090 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 110
+        STEP: 101,309
+        BEST REWARD: -17.0
+        EPSILON: 0.5733
+        ------------------------------------------------------------
+        
+2025-05-17 12:26:43,092 - INFO - Checkpointing at episode 110
+2025-05-17 12:26:43,093 - INFO - Episode 110, Total Reward: -19.0, Average Loss: 0.0007, Epsilon: 0.5733
+2025-05-17 12:27:02,141 - INFO - Episode 111, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.5704
+2025-05-17 12:27:22,558 - INFO - Episode 112, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.5676
+2025-05-17 12:27:39,738 - INFO - Episode 113, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.5647
+2025-05-17 12:27:59,042 - INFO - Episode 114, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.5619
+2025-05-17 12:28:17,438 - INFO - Episode 115, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.5591
+2025-05-17 12:28:36,497 - INFO - Episode 116, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.5563
+2025-05-17 12:28:58,962 - INFO - Episode 117, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.5535
+2025-05-17 12:29:17,933 - INFO - Episode 118, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.5507
+2025-05-17 12:29:36,383 - INFO - Episode 119, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.5480
+2025-05-17 12:30:15,871 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 120
+        STEP: 109,604
+        BEST REWARD: -17.0
+        EPSILON: 0.5452
+        ------------------------------------------------------------
+        
+2025-05-17 12:30:15,873 - INFO - Checkpointing at episode 120
+2025-05-17 12:30:15,873 - INFO - Episode 120, Total Reward: -19.0, Average Loss: 0.0005, Epsilon: 0.5452
+2025-05-17 12:30:34,682 - INFO - Episode 121, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.5425
+2025-05-17 12:30:56,490 - INFO - Episode 122, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.5398
+2025-05-17 12:31:16,414 - INFO - Episode 123, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.5371
+2025-05-17 12:31:35,026 - INFO - Episode 124, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.5344
+2025-05-17 12:31:53,251 - INFO - Episode 125, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.5318
+2025-05-17 12:32:12,892 - INFO - Episode 126, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.5291
+2025-05-17 12:32:35,337 - INFO - Episode 127, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.5264
+2025-05-17 12:32:53,400 - INFO - Episode 128, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.5238
+2025-05-17 12:33:15,935 - INFO - Episode 129, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.5212
+2025-05-17 12:33:54,332 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 130
+        STEP: 118,195
+        BEST REWARD: -17.0
+        EPSILON: 0.5186
+        ------------------------------------------------------------
+        
+2025-05-17 12:33:54,333 - INFO - Checkpointing at episode 130
+2025-05-17 12:33:54,334 - INFO - Episode 130, Total Reward: -19.0, Average Loss: 0.0007, Epsilon: 0.5186
+2025-05-17 12:34:11,578 - INFO - Episode 131, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.5160
+2025-05-17 12:34:31,202 - INFO - Episode 132, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.5134
+2025-05-17 12:34:48,797 - INFO - Episode 133, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.5108
+2025-05-17 12:35:06,725 - INFO - Episode 134, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.5083
+2025-05-17 12:35:23,604 - INFO - Episode 135, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.5058
+2025-05-17 12:35:40,740 - INFO - Episode 136, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.5032
+2025-05-17 12:36:00,051 - INFO - Episode 137, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.5007
+2025-05-17 12:36:21,516 - INFO - Episode 138, Total Reward: -19.0, Average Loss: 0.0004, Epsilon: 0.4982
+2025-05-17 12:36:37,968 - INFO - Episode 139, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.4957
+2025-05-17 12:37:11,621 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 140
+        STEP: 126,320
+        BEST REWARD: -17.0
+        EPSILON: 0.4932
+        ------------------------------------------------------------
+        
+2025-05-17 12:37:11,623 - INFO - Checkpointing at episode 140
+2025-05-17 12:37:11,623 - INFO - Episode 140, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4932
+2025-05-17 12:37:29,318 - INFO - Episode 141, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4908
+2025-05-17 12:37:50,361 - INFO - Episode 142, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.4883
+2025-05-17 12:38:06,710 - INFO - Episode 143, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4859
+2025-05-17 12:38:23,269 - INFO - Episode 144, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4834
+2025-05-17 12:38:41,584 - INFO - Episode 145, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4810
+2025-05-17 12:38:59,304 - INFO - Episode 146, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4786
+2025-05-17 12:39:15,384 - INFO - Episode 147, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.4762
+2025-05-17 12:39:32,091 - INFO - Episode 148, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4738
+2025-05-17 12:39:53,517 - INFO - Episode 149, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.4715
+2025-05-17 12:40:28,623 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 150
+        STEP: 134,355
+        BEST REWARD: -17.0
+        EPSILON: 0.4691
+        ------------------------------------------------------------
+        
+2025-05-17 12:40:28,625 - INFO - Checkpointing at episode 150
+2025-05-17 12:40:28,626 - INFO - Episode 150, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4691
+2025-05-17 12:40:48,935 - INFO - Episode 151, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4668
+2025-05-17 12:41:09,222 - INFO - Episode 152, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.4644
+2025-05-17 12:41:36,637 - INFO - Episode 153, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.4621
+2025-05-17 12:42:03,029 - INFO - Episode 154, Total Reward: -19.0, Average Loss: 0.0003, Epsilon: 0.4598
+2025-05-17 12:42:22,390 - INFO - Episode 155, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4575
+2025-05-17 12:42:41,080 - INFO - Episode 156, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4552
+2025-05-17 12:42:58,705 - INFO - Episode 157, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4529
+2025-05-17 12:43:18,333 - INFO - Episode 158, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.4507
+2025-05-17 12:43:36,146 - INFO - Episode 159, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4484
+2025-05-17 12:44:04,402 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 160
+        STEP: 143,244
+        BEST REWARD: -17.0
+        EPSILON: 0.4462
+        ------------------------------------------------------------
+        
+2025-05-17 12:44:04,403 - INFO - Checkpointing at episode 160
+2025-05-17 12:44:04,404 - INFO - Episode 160, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4462
+2025-05-17 12:44:24,653 - INFO - Episode 161, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4440
+2025-05-17 12:44:44,093 - INFO - Episode 162, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4417
+2025-05-17 12:45:09,353 - INFO - Episode 163, Total Reward: -19.0, Average Loss: 0.0004, Epsilon: 0.4395
+2025-05-17 12:45:28,275 - INFO - Episode 164, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4373
+2025-05-17 12:45:47,458 - INFO - Episode 165, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.4351
+2025-05-17 12:46:04,351 - INFO - Episode 166, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4330
+2025-05-17 12:46:25,421 - INFO - Episode 167, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.4308
+2025-05-17 12:46:53,697 - INFO - Episode 168, Total Reward: -19.0, Average Loss: 0.0003, Epsilon: 0.4286
+2025-05-17 12:47:16,495 - INFO - Episode 169, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.4265
+2025-05-17 12:47:51,422 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 170
+        STEP: 151,952
+        BEST REWARD: -17.0
+        EPSILON: 0.4244
+        ------------------------------------------------------------
+        
+2025-05-17 12:47:51,424 - INFO - Checkpointing at episode 170
+2025-05-17 12:47:51,424 - INFO - Episode 170, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4244
+2025-05-17 12:48:13,145 - INFO - Episode 171, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4223
+2025-05-17 12:48:31,356 - INFO - Episode 172, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4201
+2025-05-17 12:48:55,612 - INFO - Episode 173, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.4180
+2025-05-17 12:49:15,146 - INFO - Episode 174, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4159
+2025-05-17 12:49:33,129 - INFO - Episode 175, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4139
+2025-05-17 12:49:51,510 - INFO - Episode 176, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.4118
+2025-05-17 12:50:10,115 - INFO - Episode 177, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.4097
+2025-05-17 12:50:30,589 - INFO - Episode 178, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.4077
+2025-05-17 12:50:50,307 - INFO - Episode 179, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.4057
+2025-05-17 12:51:28,321 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 180
+        STEP: 160,309
+        BEST REWARD: -17.0
+        EPSILON: 0.4036
+        ------------------------------------------------------------
+        
+2025-05-17 12:51:28,322 - INFO - Checkpointing at episode 180
+2025-05-17 12:51:28,323 - INFO - Episode 180, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.4036
+2025-05-17 12:51:50,344 - INFO - Episode 181, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.4016
+2025-05-17 12:52:14,034 - INFO - Episode 182, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.3996
+2025-05-17 12:52:33,801 - INFO - Episode 183, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.3976
+2025-05-17 12:52:55,742 - INFO - Episode 184, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.3956
+2025-05-17 12:53:22,201 - INFO - Episode 185, Total Reward: -17.0, Average Loss: 0.0004, Epsilon: 0.3936
+2025-05-17 12:53:45,397 - INFO - Episode 186, Total Reward: -19.0, Average Loss: 0.0006, Epsilon: 0.3917
+2025-05-17 12:54:03,244 - INFO - Episode 187, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3897
+2025-05-17 12:54:21,750 - INFO - Episode 188, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.3878
+2025-05-17 12:54:39,992 - INFO - Episode 189, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.3858
+2025-05-17 12:55:16,368 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 190
+        STEP: 169,681
+        BEST REWARD: -17.0
+        EPSILON: 0.3839
+        ------------------------------------------------------------
+        
+2025-05-17 12:55:16,369 - INFO - Checkpointing at episode 190
+2025-05-17 12:55:16,370 - INFO - Episode 190, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.3839
+2025-05-17 12:55:37,446 - INFO - Episode 191, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3820
+2025-05-17 12:55:56,801 - INFO - Episode 192, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.3801
+2025-05-17 12:56:15,160 - INFO - Episode 193, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3782
+2025-05-17 12:56:34,593 - INFO - Episode 194, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.3763
+2025-05-17 12:56:57,718 - INFO - Episode 195, Total Reward: -19.0, Average Loss: 0.0005, Epsilon: 0.3744
+2025-05-17 12:57:16,966 - INFO - Episode 196, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3725
+2025-05-17 12:57:36,435 - INFO - Episode 197, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3707
+2025-05-17 12:57:56,092 - INFO - Episode 198, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.3688
+2025-05-17 12:58:18,218 - INFO - Episode 199, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.3670
+2025-05-17 12:58:40,784 - INFO - Updated target network at episode 200
+2025-05-17 12:58:52,466 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 200
+        STEP: 178,708
+        BEST REWARD: -17.0
+        EPSILON: 0.3651
+        ------------------------------------------------------------
+        
+2025-05-17 12:58:52,469 - INFO - Checkpointing at episode 200
+2025-05-17 12:58:52,469 - INFO - Episode 200, Total Reward: -19.0, Average Loss: 0.0003, Epsilon: 0.3651
+2025-05-17 12:59:15,366 - INFO - Episode 201, Total Reward: -20.0, Average Loss: 0.0067, Epsilon: 0.3633
+2025-05-17 12:59:33,827 - INFO - Episode 202, Total Reward: -21.0, Average Loss: 0.0023, Epsilon: 0.3615
+2025-05-17 12:59:54,030 - INFO - Episode 203, Total Reward: -21.0, Average Loss: 0.0020, Epsilon: 0.3597
+2025-05-17 13:00:12,753 - INFO - Episode 204, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.3579
+2025-05-17 13:00:30,052 - INFO - Episode 205, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.3561
+2025-05-17 13:00:47,097 - INFO - Episode 206, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.3543
+2025-05-17 13:01:04,779 - INFO - Episode 207, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.3525
+2025-05-17 13:01:21,313 - INFO - Episode 208, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3508
+2025-05-17 13:01:37,308 - INFO - Episode 209, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3490
+2025-05-17 13:02:07,627 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 210
+        STEP: 186,721
+        BEST REWARD: -17.0
+        EPSILON: 0.3473
+        ------------------------------------------------------------
+        
+2025-05-17 13:02:07,629 - INFO - Checkpointing at episode 210
+2025-05-17 13:02:07,630 - INFO - Episode 210, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.3473
+2025-05-17 13:02:28,538 - INFO - Episode 211, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3455
+2025-05-17 13:02:45,212 - INFO - Episode 212, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3438
+2025-05-17 13:03:03,564 - INFO - Episode 213, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.3421
+2025-05-17 13:03:23,250 - INFO - Episode 214, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.3404
+2025-05-17 13:03:43,762 - INFO - Episode 215, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3387
+2025-05-17 13:04:01,288 - INFO - Episode 216, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.3370
+2025-05-17 13:04:17,439 - INFO - Episode 217, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.3353
+2025-05-17 13:04:33,358 - INFO - Episode 218, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3336
+2025-05-17 13:04:49,161 - INFO - Episode 219, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3320
+2025-05-17 13:05:13,360 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 220
+        STEP: 194,715
+        BEST REWARD: -17.0
+        EPSILON: 0.3303
+        ------------------------------------------------------------
+        
+2025-05-17 13:05:13,363 - INFO - Checkpointing at episode 220
+2025-05-17 13:05:13,363 - INFO - Episode 220, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3303
+2025-05-17 13:05:29,672 - INFO - Episode 221, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3286
+2025-05-17 13:05:45,224 - INFO - Episode 222, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3270
+2025-05-17 13:06:02,315 - INFO - Episode 223, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3254
+2025-05-17 13:06:17,573 - INFO - Episode 224, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.3237
+2025-05-17 13:06:32,671 - INFO - Episode 225, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.3221
+2025-05-17 13:06:47,738 - INFO - Episode 226, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3205
+2025-05-17 13:07:05,189 - INFO - Episode 227, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.3189
+2025-05-17 13:07:19,958 - INFO - Episode 228, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3173
+2025-05-17 13:07:34,844 - INFO - Episode 229, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3157
+2025-05-17 13:07:58,907 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 230
+        STEP: 202,505
+        BEST REWARD: -17.0
+        EPSILON: 0.3141
+        ------------------------------------------------------------
+        
+2025-05-17 13:07:58,908 - INFO - Checkpointing at episode 230
+2025-05-17 13:07:58,909 - INFO - Episode 230, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3141
+2025-05-17 13:08:15,761 - INFO - Episode 231, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.3126
+2025-05-17 13:08:30,421 - INFO - Episode 232, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3110
+2025-05-17 13:08:50,670 - INFO - Episode 233, Total Reward: -19.0, Average Loss: 0.0006, Epsilon: 0.3095
+2025-05-17 13:09:08,477 - INFO - Episode 234, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.3079
+2025-05-17 13:09:24,930 - INFO - Episode 235, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3064
+2025-05-17 13:09:43,347 - INFO - Episode 236, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.3048
+2025-05-17 13:09:58,352 - INFO - Episode 237, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3033
+2025-05-17 13:10:13,150 - INFO - Episode 238, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.3018
+2025-05-17 13:10:29,039 - INFO - Episode 239, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.3003
+2025-05-17 13:10:56,886 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 240
+        STEP: 211,010
+        BEST REWARD: -17.0
+        EPSILON: 0.2988
+        ------------------------------------------------------------
+        
+2025-05-17 13:10:56,887 - INFO - Checkpointing at episode 240
+2025-05-17 13:10:56,888 - INFO - Episode 240, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.2988
+2025-05-17 13:11:15,769 - INFO - Episode 241, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2973
+2025-05-17 13:11:31,326 - INFO - Episode 242, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2958
+2025-05-17 13:11:53,907 - INFO - Episode 243, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2943
+2025-05-17 13:12:11,097 - INFO - Episode 244, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.2929
+2025-05-17 13:12:27,503 - INFO - Episode 245, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.2914
+2025-05-17 13:12:42,389 - INFO - Episode 246, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.2899
+2025-05-17 13:12:57,453 - INFO - Episode 247, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2885
+2025-05-17 13:13:12,782 - INFO - Episode 248, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2870
+2025-05-17 13:13:31,253 - INFO - Episode 249, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.2856
+2025-05-17 13:13:57,015 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 250
+        STEP: 219,499
+        BEST REWARD: -17.0
+        EPSILON: 0.2842
+        ------------------------------------------------------------
+        
+2025-05-17 13:13:57,018 - INFO - Checkpointing at episode 250
+2025-05-17 13:13:57,019 - INFO - Episode 250, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2842
+2025-05-17 13:14:12,286 - INFO - Episode 251, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.2828
+2025-05-17 13:14:30,795 - INFO - Episode 252, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2813
+2025-05-17 13:14:45,823 - INFO - Episode 253, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2799
+2025-05-17 13:15:01,070 - INFO - Episode 254, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.2785
+2025-05-17 13:15:17,906 - INFO - Episode 255, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2771
+2025-05-17 13:15:33,337 - INFO - Episode 256, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2758
+2025-05-17 13:15:48,237 - INFO - Episode 257, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.2744
+2025-05-17 13:16:03,334 - INFO - Episode 258, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2730
+2025-05-17 13:16:18,124 - INFO - Episode 259, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.2716
+2025-05-17 13:16:42,872 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 260
+        STEP: 227,379
+        BEST REWARD: -17.0
+        EPSILON: 0.2703
+        ------------------------------------------------------------
+        
+2025-05-17 13:16:42,874 - INFO - Checkpointing at episode 260
+2025-05-17 13:16:42,874 - INFO - Episode 260, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2703
+2025-05-17 13:16:58,513 - INFO - Episode 261, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2689
+2025-05-17 13:17:15,731 - INFO - Episode 262, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2676
+2025-05-17 13:17:32,395 - INFO - Episode 263, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2663
+2025-05-17 13:17:52,068 - INFO - Episode 264, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2649
+2025-05-17 13:18:08,546 - INFO - Episode 265, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2636
+2025-05-17 13:18:24,457 - INFO - Episode 266, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2623
+2025-05-17 13:18:39,913 - INFO - Episode 267, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.2610
+2025-05-17 13:18:56,753 - INFO - Episode 268, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2597
+2025-05-17 13:19:12,122 - INFO - Episode 269, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2584
+2025-05-17 13:19:35,643 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 270
+        STEP: 235,536
+        BEST REWARD: -17.0
+        EPSILON: 0.2571
+        ------------------------------------------------------------
+        
+2025-05-17 13:19:35,644 - INFO - Checkpointing at episode 270
+2025-05-17 13:19:35,644 - INFO - Episode 270, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2571
+2025-05-17 13:19:51,357 - INFO - Episode 271, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2558
+2025-05-17 13:20:07,936 - INFO - Episode 272, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2545
+2025-05-17 13:20:25,162 - INFO - Episode 273, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.2532
+2025-05-17 13:20:43,483 - INFO - Episode 274, Total Reward: -20.0, Average Loss: 0.0004, Epsilon: 0.2520
+2025-05-17 13:20:58,620 - INFO - Episode 275, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2507
+2025-05-17 13:21:14,029 - INFO - Episode 276, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2495
+2025-05-17 13:21:29,295 - INFO - Episode 277, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2482
+2025-05-17 13:21:46,577 - INFO - Episode 278, Total Reward: -20.0, Average Loss: 0.0002, Epsilon: 0.2470
+2025-05-17 13:22:03,286 - INFO - Episode 279, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2457
+2025-05-17 13:22:27,917 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 280
+        STEP: 243,691
+        BEST REWARD: -17.0
+        EPSILON: 0.2445
+        ------------------------------------------------------------
+        
+2025-05-17 13:22:27,919 - INFO - Checkpointing at episode 280
+2025-05-17 13:22:27,920 - INFO - Episode 280, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2445
+2025-05-17 13:22:43,346 - INFO - Episode 281, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2433
+2025-05-17 13:23:02,345 - INFO - Episode 282, Total Reward: -19.0, Average Loss: 0.0004, Epsilon: 0.2421
+2025-05-17 13:23:17,299 - INFO - Episode 283, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2409
+2025-05-17 13:23:32,521 - INFO - Episode 284, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2397
+2025-05-17 13:23:49,047 - INFO - Episode 285, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2385
+2025-05-17 13:24:04,068 - INFO - Episode 286, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2373
+2025-05-17 13:24:19,178 - INFO - Episode 287, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.2361
+2025-05-17 13:24:34,171 - INFO - Episode 288, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2349
+2025-05-17 13:24:49,190 - INFO - Episode 289, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2337
+2025-05-17 13:25:17,570 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 290
+        STEP: 251,667
+        BEST REWARD: -17.0
+        EPSILON: 0.2326
+        ------------------------------------------------------------
+        
+2025-05-17 13:25:17,571 - INFO - Checkpointing at episode 290
+2025-05-17 13:25:17,572 - INFO - Episode 290, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2326
+2025-05-17 13:25:33,802 - INFO - Episode 291, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2314
+2025-05-17 13:25:49,796 - INFO - Episode 292, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2302
+2025-05-17 13:26:06,862 - INFO - Episode 293, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2291
+2025-05-17 13:26:25,582 - INFO - Episode 294, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2279
+2025-05-17 13:26:46,920 - INFO - Episode 295, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.2268
+2025-05-17 13:27:02,969 - INFO - Episode 296, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2257
+2025-05-17 13:27:21,636 - INFO - Episode 297, Total Reward: -20.0, Average Loss: 0.0003, Epsilon: 0.2245
+2025-05-17 13:27:41,521 - INFO - Episode 298, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.2234
+2025-05-17 13:27:57,116 - INFO - Episode 299, Total Reward: -21.0, Average Loss: 0.0002, Epsilon: 0.2223
+2025-05-17 13:28:12,905 - INFO - Updated target network at episode 300
+2025-05-17 13:28:22,394 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 300
+        STEP: 260,053
+        BEST REWARD: -17.0
+        EPSILON: 0.2212
+        ------------------------------------------------------------
+        
+2025-05-17 13:28:22,396 - INFO - Checkpointing at episode 300
+2025-05-17 13:28:22,396 - INFO - Episode 300, Total Reward: -21.0, Average Loss: 0.0003, Epsilon: 0.2212
+2025-05-17 13:28:40,668 - INFO - Episode 301, Total Reward: -21.0, Average Loss: 0.0058, Epsilon: 0.2201
+2025-05-17 13:28:58,989 - INFO - Episode 302, Total Reward: -21.0, Average Loss: 0.0019, Epsilon: 0.2190
+2025-05-17 13:29:14,862 - INFO - Episode 303, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.2179
+2025-05-17 13:29:33,392 - INFO - Episode 304, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.2168
+2025-05-17 13:29:51,040 - INFO - Episode 305, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.2157
+2025-05-17 13:30:11,550 - INFO - Episode 306, Total Reward: -19.0, Average Loss: 0.0011, Epsilon: 0.2146
+2025-05-17 13:30:27,216 - INFO - Episode 307, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.2136
+2025-05-17 13:30:46,204 - INFO - Episode 308, Total Reward: -20.0, Average Loss: 0.0010, Epsilon: 0.2125
+2025-05-17 13:31:01,241 - INFO - Episode 309, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.2114
+2025-05-17 13:31:24,426 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 310
+        STEP: 268,439
+        BEST REWARD: -17.0
+        EPSILON: 0.2104
+        ------------------------------------------------------------
+        
+2025-05-17 13:31:24,428 - INFO - Checkpointing at episode 310
+2025-05-17 13:31:24,429 - INFO - Episode 310, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.2104
+2025-05-17 13:31:41,038 - INFO - Episode 311, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.2093
+2025-05-17 13:31:56,803 - INFO - Episode 312, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.2083
+2025-05-17 13:32:13,348 - INFO - Episode 313, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.2072
+2025-05-17 13:32:37,609 - INFO - Episode 314, Total Reward: -17.0, Average Loss: 0.0008, Epsilon: 0.2062
+2025-05-17 13:32:53,947 - INFO - Episode 315, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.2052
+2025-05-17 13:33:10,550 - INFO - Episode 316, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.2041
+2025-05-17 13:33:26,173 - INFO - Episode 317, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.2031
+2025-05-17 13:33:41,198 - INFO - Episode 318, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.2021
+2025-05-17 13:33:59,366 - INFO - Episode 319, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.2011
+2025-05-17 13:34:23,816 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 320
+        STEP: 276,870
+        BEST REWARD: -17.0
+        EPSILON: 0.2001
+        ------------------------------------------------------------
+        
+2025-05-17 13:34:23,817 - INFO - Checkpointing at episode 320
+2025-05-17 13:34:23,818 - INFO - Episode 320, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.2001
+2025-05-17 13:34:39,206 - INFO - Episode 321, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1991
+2025-05-17 13:34:57,809 - INFO - Episode 322, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1981
+2025-05-17 13:35:14,145 - INFO - Episode 323, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1971
+2025-05-17 13:35:30,094 - INFO - Episode 324, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1961
+2025-05-17 13:35:46,299 - INFO - Episode 325, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.1951
+2025-05-17 13:36:03,197 - INFO - Episode 326, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.1942
+2025-05-17 13:36:18,410 - INFO - Episode 327, Total Reward: -21.0, Average Loss: 0.0004, Epsilon: 0.1932
+2025-05-17 13:36:33,961 - INFO - Episode 328, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1922
+2025-05-17 13:36:50,306 - INFO - Episode 329, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.1913
+2025-05-17 13:37:13,717 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 330
+        STEP: 285,022
+        BEST REWARD: -17.0
+        EPSILON: 0.1903
+        ------------------------------------------------------------
+        
+2025-05-17 13:37:13,719 - INFO - Checkpointing at episode 330
+2025-05-17 13:37:13,719 - INFO - Episode 330, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1903
+2025-05-17 13:37:31,185 - INFO - Episode 331, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1893
+2025-05-17 13:37:50,893 - INFO - Episode 332, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.1884
+2025-05-17 13:38:10,178 - INFO - Episode 333, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.1875
+2025-05-17 13:38:31,996 - INFO - Episode 334, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.1865
+2025-05-17 13:38:52,827 - INFO - Episode 335, Total Reward: -20.0, Average Loss: 0.0009, Epsilon: 0.1856
+2025-05-17 13:39:07,912 - INFO - Episode 336, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1847
+2025-05-17 13:39:23,940 - INFO - Episode 337, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1837
+2025-05-17 13:39:42,326 - INFO - Episode 338, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1828
+2025-05-17 13:39:57,171 - INFO - Episode 339, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1819
+2025-05-17 13:40:20,956 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 340
+        STEP: 294,076
+        BEST REWARD: -17.0
+        EPSILON: 0.1810
+        ------------------------------------------------------------
+        
+2025-05-17 13:40:20,956 - INFO - Checkpointing at episode 340
+2025-05-17 13:40:20,957 - INFO - Episode 340, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1810
+2025-05-17 13:40:37,057 - INFO - Episode 341, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1801
+2025-05-17 13:40:51,914 - INFO - Episode 342, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1792
+2025-05-17 13:41:09,605 - INFO - Episode 343, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.1783
+2025-05-17 13:41:25,572 - INFO - Episode 344, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1774
+2025-05-17 13:41:40,964 - INFO - Episode 345, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1765
+2025-05-17 13:41:58,891 - INFO - Episode 346, Total Reward: -20.0, Average Loss: 0.0009, Epsilon: 0.1756
+2025-05-17 13:42:16,291 - INFO - Episode 347, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1748
+2025-05-17 13:42:36,576 - INFO - Episode 348, Total Reward: -20.0, Average Loss: 0.0011, Epsilon: 0.1739
+2025-05-17 13:42:53,340 - INFO - Episode 349, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1730
+2025-05-17 13:43:19,472 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 350
+        STEP: 302,740
+        BEST REWARD: -17.0
+        EPSILON: 0.1721
+        ------------------------------------------------------------
+        
+2025-05-17 13:43:19,474 - INFO - Checkpointing at episode 350
+2025-05-17 13:43:19,474 - INFO - Episode 350, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1721
+2025-05-17 13:43:35,596 - INFO - Episode 351, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1713
+2025-05-17 13:43:54,460 - INFO - Episode 352, Total Reward: -19.0, Average Loss: 0.0009, Epsilon: 0.1704
+2025-05-17 13:44:11,396 - INFO - Episode 353, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.1696
+2025-05-17 13:44:26,758 - INFO - Episode 354, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1687
+2025-05-17 13:44:41,622 - INFO - Episode 355, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1679
+2025-05-17 13:44:58,322 - INFO - Episode 356, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.1670
+2025-05-17 13:45:15,537 - INFO - Episode 357, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1662
+2025-05-17 13:45:30,355 - INFO - Episode 358, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1654
+2025-05-17 13:45:45,369 - INFO - Episode 359, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1646
+2025-05-17 13:46:10,403 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 360
+        STEP: 310,927
+        BEST REWARD: -17.0
+        EPSILON: 0.1637
+        ------------------------------------------------------------
+        
+2025-05-17 13:46:10,404 - INFO - Checkpointing at episode 360
+2025-05-17 13:46:10,404 - INFO - Episode 360, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1637
+2025-05-17 13:46:30,625 - INFO - Episode 361, Total Reward: -19.0, Average Loss: 0.0007, Epsilon: 0.1629
+2025-05-17 13:46:46,253 - INFO - Episode 362, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1621
+2025-05-17 13:47:04,646 - INFO - Episode 363, Total Reward: -19.0, Average Loss: 0.0006, Epsilon: 0.1613
+2025-05-17 13:47:20,589 - INFO - Episode 364, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1605
+2025-05-17 13:47:42,569 - INFO - Episode 365, Total Reward: -20.0, Average Loss: 0.0011, Epsilon: 0.1597
+2025-05-17 13:47:57,569 - INFO - Episode 366, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1589
+2025-05-17 13:48:14,886 - INFO - Episode 367, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.1581
+2025-05-17 13:48:31,269 - INFO - Episode 368, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1573
+2025-05-17 13:48:46,522 - INFO - Episode 369, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1565
+2025-05-17 13:49:12,709 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 370
+        STEP: 319,651
+        BEST REWARD: -17.0
+        EPSILON: 0.1557
+        ------------------------------------------------------------
+        
+2025-05-17 13:49:12,717 - INFO - Checkpointing at episode 370
+2025-05-17 13:49:12,722 - INFO - Episode 370, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1557
+2025-05-17 13:49:28,990 - INFO - Episode 371, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1549
+2025-05-17 13:49:49,071 - INFO - Episode 372, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.1542
+2025-05-17 13:50:04,440 - INFO - Episode 373, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1534
+2025-05-17 13:50:19,460 - INFO - Episode 374, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1526
+2025-05-17 13:50:34,528 - INFO - Episode 375, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1519
+2025-05-17 13:50:52,318 - INFO - Episode 376, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1511
+2025-05-17 13:51:09,071 - INFO - Episode 377, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1504
+2025-05-17 13:51:31,334 - INFO - Episode 378, Total Reward: -18.0, Average Loss: 0.0006, Epsilon: 0.1496
+2025-05-17 13:51:46,798 - INFO - Episode 379, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1489
+2025-05-17 13:52:11,963 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 380
+        STEP: 328,225
+        BEST REWARD: -17.0
+        EPSILON: 0.1481
+        ------------------------------------------------------------
+        
+2025-05-17 13:52:11,964 - INFO - Checkpointing at episode 380
+2025-05-17 13:52:11,965 - INFO - Episode 380, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1481
+2025-05-17 13:52:29,703 - INFO - Episode 381, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1474
+2025-05-17 13:52:44,902 - INFO - Episode 382, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1466
+2025-05-17 13:53:00,097 - INFO - Episode 383, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1459
+2025-05-17 13:53:22,510 - INFO - Episode 384, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.1452
+2025-05-17 13:53:39,721 - INFO - Episode 385, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1444
+2025-05-17 13:53:56,250 - INFO - Episode 386, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1437
+2025-05-17 13:54:13,248 - INFO - Episode 387, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.1430
+2025-05-17 13:54:28,385 - INFO - Episode 388, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1423
+2025-05-17 13:54:43,511 - INFO - Episode 389, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1416
+2025-05-17 13:55:07,061 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 390
+        STEP: 336,500
+        BEST REWARD: -17.0
+        EPSILON: 0.1409
+        ------------------------------------------------------------
+        
+2025-05-17 13:55:07,062 - INFO - Checkpointing at episode 390
+2025-05-17 13:55:07,063 - INFO - Episode 390, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1409
+2025-05-17 13:55:25,124 - INFO - Episode 391, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1402
+2025-05-17 13:55:41,551 - INFO - Episode 392, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1395
+2025-05-17 13:55:59,944 - INFO - Episode 393, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.1388
+2025-05-17 13:56:19,938 - INFO - Episode 394, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.1381
+2025-05-17 13:56:35,231 - INFO - Episode 395, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1374
+2025-05-17 13:56:52,732 - INFO - Episode 396, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1367
+2025-05-17 13:57:08,716 - INFO - Episode 397, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1360
+2025-05-17 13:57:27,328 - INFO - Episode 398, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1353
+2025-05-17 13:57:43,883 - INFO - Episode 399, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1347
+2025-05-17 13:58:03,546 - INFO - Updated target network at episode 400
+2025-05-17 13:58:14,667 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 400
+        STEP: 345,192
+        BEST REWARD: -17.0
+        EPSILON: 0.1340
+        ------------------------------------------------------------
+        
+2025-05-17 13:58:14,670 - INFO - Checkpointing at episode 400
+2025-05-17 13:58:14,671 - INFO - Episode 400, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1340
+2025-05-17 13:58:31,986 - INFO - Episode 401, Total Reward: -21.0, Average Loss: 0.0075, Epsilon: 0.1333
+2025-05-17 13:58:47,899 - INFO - Episode 402, Total Reward: -20.0, Average Loss: 0.0036, Epsilon: 0.1326
+2025-05-17 13:59:03,778 - INFO - Episode 403, Total Reward: -20.0, Average Loss: 0.0025, Epsilon: 0.1320
+2025-05-17 13:59:18,810 - INFO - Episode 404, Total Reward: -21.0, Average Loss: 0.0022, Epsilon: 0.1313
+2025-05-17 13:59:33,047 - INFO - Episode 405, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.1307
+2025-05-17 13:59:46,781 - INFO - Episode 406, Total Reward: -21.0, Average Loss: 0.0018, Epsilon: 0.1300
+2025-05-17 14:00:01,209 - INFO - Episode 407, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.1294
+2025-05-17 14:00:15,518 - INFO - Episode 408, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.1287
+2025-05-17 14:00:33,760 - INFO - Episode 409, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.1281
+2025-05-17 14:00:57,327 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 410
+        STEP: 353,427
+        BEST REWARD: -17.0
+        EPSILON: 0.1274
+        ------------------------------------------------------------
+        
+2025-05-17 14:00:57,328 - INFO - Checkpointing at episode 410
+2025-05-17 14:00:57,329 - INFO - Episode 410, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1274
+2025-05-17 14:01:12,878 - INFO - Episode 411, Total Reward: -20.0, Average Loss: 0.0012, Epsilon: 0.1268
+2025-05-17 14:01:27,119 - INFO - Episode 412, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.1262
+2025-05-17 14:01:40,960 - INFO - Episode 413, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.1255
+2025-05-17 14:01:55,903 - INFO - Episode 414, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1249
+2025-05-17 14:02:09,771 - INFO - Episode 415, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1243
+2025-05-17 14:02:27,766 - INFO - Episode 416, Total Reward: -19.0, Average Loss: 0.0010, Epsilon: 0.1237
+2025-05-17 14:02:41,379 - INFO - Episode 417, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1230
+2025-05-17 14:02:55,102 - INFO - Episode 418, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1224
+2025-05-17 14:03:12,068 - INFO - Episode 419, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1218
+2025-05-17 14:03:38,047 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 420
+        STEP: 361,736
+        BEST REWARD: -17.0
+        EPSILON: 0.1212
+        ------------------------------------------------------------
+        
+2025-05-17 14:03:38,050 - INFO - Checkpointing at episode 420
+2025-05-17 14:03:38,051 - INFO - Episode 420, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.1212
+2025-05-17 14:03:52,511 - INFO - Episode 421, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1206
+2025-05-17 14:04:06,630 - INFO - Episode 422, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1200
+2025-05-17 14:04:24,388 - INFO - Episode 423, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.1194
+2025-05-17 14:04:38,468 - INFO - Episode 424, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1188
+2025-05-17 14:04:53,444 - INFO - Episode 425, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.1182
+2025-05-17 14:05:07,077 - INFO - Episode 426, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.1176
+2025-05-17 14:05:20,515 - INFO - Episode 427, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1170
+2025-05-17 14:05:34,174 - INFO - Episode 428, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.1164
+2025-05-17 14:05:47,998 - INFO - Episode 429, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1159
+2025-05-17 14:06:10,330 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 430
+        STEP: 369,623
+        BEST REWARD: -17.0
+        EPSILON: 0.1153
+        ------------------------------------------------------------
+        
+2025-05-17 14:06:10,331 - INFO - Checkpointing at episode 430
+2025-05-17 14:06:10,332 - INFO - Episode 430, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1153
+2025-05-17 14:06:32,385 - INFO - Episode 431, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1147
+2025-05-17 14:06:46,508 - INFO - Episode 432, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1141
+2025-05-17 14:07:06,280 - INFO - Episode 433, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.1136
+2025-05-17 14:07:22,596 - INFO - Episode 434, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1130
+2025-05-17 14:07:37,092 - INFO - Episode 435, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1124
+2025-05-17 14:07:54,624 - INFO - Episode 436, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.1119
+2025-05-17 14:08:08,844 - INFO - Episode 437, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1113
+2025-05-17 14:08:22,681 - INFO - Episode 438, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1107
+2025-05-17 14:08:40,110 - INFO - Episode 439, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.1102
+2025-05-17 14:09:03,400 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 440
+        STEP: 378,405
+        BEST REWARD: -17.0
+        EPSILON: 0.1096
+        ------------------------------------------------------------
+        
+2025-05-17 14:09:03,402 - INFO - Checkpointing at episode 440
+2025-05-17 14:09:03,402 - INFO - Episode 440, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.1096
+2025-05-17 14:09:19,651 - INFO - Episode 441, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.1091
+2025-05-17 14:09:34,027 - INFO - Episode 442, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1085
+2025-05-17 14:09:48,455 - INFO - Episode 443, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.1080
+2025-05-17 14:10:02,850 - INFO - Episode 444, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1075
+2025-05-17 14:10:16,957 - INFO - Episode 445, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1069
+2025-05-17 14:10:31,078 - INFO - Episode 446, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1064
+2025-05-17 14:10:45,389 - INFO - Episode 447, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1059
+2025-05-17 14:10:59,222 - INFO - Episode 448, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1053
+2025-05-17 14:11:17,955 - INFO - Episode 449, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.1048
+2025-05-17 14:11:41,092 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 450
+        STEP: 386,353
+        BEST REWARD: -17.0
+        EPSILON: 0.1043
+        ------------------------------------------------------------
+        
+2025-05-17 14:11:41,093 - INFO - Checkpointing at episode 450
+2025-05-17 14:11:41,093 - INFO - Episode 450, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1043
+2025-05-17 14:11:56,430 - INFO - Episode 451, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1038
+2025-05-17 14:12:12,023 - INFO - Episode 452, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1032
+2025-05-17 14:12:26,559 - INFO - Episode 453, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1027
+2025-05-17 14:12:43,716 - INFO - Episode 454, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.1022
+2025-05-17 14:12:58,688 - INFO - Episode 455, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.1017
+2025-05-17 14:13:15,000 - INFO - Episode 456, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.1012
+2025-05-17 14:13:36,112 - INFO - Episode 457, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.1007
+2025-05-17 14:13:51,926 - INFO - Episode 458, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.1002
+2025-05-17 14:14:05,939 - INFO - Episode 459, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0997
+2025-05-17 14:14:31,413 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 460
+        STEP: 394,929
+        BEST REWARD: -17.0
+        EPSILON: 0.0992
+        ------------------------------------------------------------
+        
+2025-05-17 14:14:31,414 - INFO - Checkpointing at episode 460
+2025-05-17 14:14:31,415 - INFO - Episode 460, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0992
+2025-05-17 14:14:50,316 - INFO - Episode 461, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.0987
+2025-05-17 14:15:07,143 - INFO - Episode 462, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.0982
+2025-05-17 14:15:27,335 - INFO - Episode 463, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.0977
+2025-05-17 14:15:42,633 - INFO - Episode 464, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.0972
+2025-05-17 14:16:00,678 - INFO - Episode 465, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.0967
+2025-05-17 14:16:15,998 - INFO - Episode 466, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0962
+2025-05-17 14:16:33,197 - INFO - Episode 467, Total Reward: -19.0, Average Loss: 0.0007, Epsilon: 0.0958
+2025-05-17 14:16:51,321 - INFO - Episode 468, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.0953
+2025-05-17 14:17:06,011 - INFO - Episode 469, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.0948
+2025-05-17 14:17:28,623 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 470
+        STEP: 403,418
+        BEST REWARD: -17.0
+        EPSILON: 0.0943
+        ------------------------------------------------------------
+        
+2025-05-17 14:17:28,625 - INFO - Checkpointing at episode 470
+2025-05-17 14:17:28,625 - INFO - Episode 470, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0943
+2025-05-17 14:17:44,163 - INFO - Episode 471, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0939
+2025-05-17 14:17:58,486 - INFO - Episode 472, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0934
+2025-05-17 14:18:15,494 - INFO - Episode 473, Total Reward: -20.0, Average Loss: 0.0008, Epsilon: 0.0929
+2025-05-17 14:18:30,905 - INFO - Episode 474, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.0925
+2025-05-17 14:18:45,982 - INFO - Episode 475, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.0920
+2025-05-17 14:18:59,753 - INFO - Episode 476, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0915
+2025-05-17 14:19:14,855 - INFO - Episode 477, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0911
+2025-05-17 14:19:28,744 - INFO - Episode 478, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.0906
+2025-05-17 14:19:43,848 - INFO - Episode 479, Total Reward: -20.0, Average Loss: 0.0006, Epsilon: 0.0902
+2025-05-17 14:20:10,175 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 480
+        STEP: 411,653
+        BEST REWARD: -17.0
+        EPSILON: 0.0897
+        ------------------------------------------------------------
+        
+2025-05-17 14:20:10,179 - INFO - Checkpointing at episode 480
+2025-05-17 14:20:10,180 - INFO - Episode 480, Total Reward: -21.0, Average Loss: 0.0009, Epsilon: 0.0897
+2025-05-17 14:20:25,449 - INFO - Episode 481, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0893
+2025-05-17 14:20:39,713 - INFO - Episode 482, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0888
+2025-05-17 14:20:53,869 - INFO - Episode 483, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0884
+2025-05-17 14:21:07,863 - INFO - Episode 484, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0879
+2025-05-17 14:21:23,454 - INFO - Episode 485, Total Reward: -20.0, Average Loss: 0.0005, Epsilon: 0.0875
+2025-05-17 14:21:39,929 - INFO - Episode 486, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0871
+2025-05-17 14:21:58,456 - INFO - Episode 487, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0866
+2025-05-17 14:22:13,431 - INFO - Episode 488, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0862
+2025-05-17 14:22:28,110 - INFO - Episode 489, Total Reward: -21.0, Average Loss: 0.0008, Epsilon: 0.0858
+2025-05-17 14:22:53,596 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 490
+        STEP: 419,872
+        BEST REWARD: -17.0
+        EPSILON: 0.0853
+        ------------------------------------------------------------
+        
+2025-05-17 14:22:53,597 - INFO - Checkpointing at episode 490
+2025-05-17 14:22:53,598 - INFO - Episode 490, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0853
+2025-05-17 14:23:08,020 - INFO - Episode 491, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0849
+2025-05-17 14:23:23,750 - INFO - Episode 492, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0845
+2025-05-17 14:23:38,283 - INFO - Episode 493, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0841
+2025-05-17 14:23:55,010 - INFO - Episode 494, Total Reward: -21.0, Average Loss: 0.0005, Epsilon: 0.0836
+2025-05-17 14:24:11,864 - INFO - Episode 495, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0832
+2025-05-17 14:24:26,923 - INFO - Episode 496, Total Reward: -21.0, Average Loss: 0.0007, Epsilon: 0.0828
+2025-05-17 14:24:40,822 - INFO - Episode 497, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.0824
+2025-05-17 14:24:55,271 - INFO - Episode 498, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0820
+2025-05-17 14:25:15,050 - INFO - Episode 499, Total Reward: -20.0, Average Loss: 0.0007, Epsilon: 0.0816
+2025-05-17 14:25:29,053 - INFO - Updated target network at episode 500
+2025-05-17 14:25:41,383 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 500
+        STEP: 428,168
+        BEST REWARD: -17.0
+        EPSILON: 0.0812
+        ------------------------------------------------------------
+        
+2025-05-17 14:25:41,383 - INFO - Checkpointing at episode 500
+2025-05-17 14:25:41,384 - INFO - Episode 500, Total Reward: -21.0, Average Loss: 0.0006, Epsilon: 0.0812
+2025-05-17 14:26:01,179 - INFO - Episode 501, Total Reward: -20.0, Average Loss: 0.0059, Epsilon: 0.0808
+2025-05-17 14:26:15,461 - INFO - Episode 502, Total Reward: -21.0, Average Loss: 0.0025, Epsilon: 0.0804
+2025-05-17 14:26:32,801 - INFO - Episode 503, Total Reward: -20.0, Average Loss: 0.0027, Epsilon: 0.0800
+2025-05-17 14:26:52,661 - INFO - Episode 504, Total Reward: -19.0, Average Loss: 0.0024, Epsilon: 0.0796
+2025-05-17 14:27:12,807 - INFO - Episode 505, Total Reward: -21.0, Average Loss: 0.0020, Epsilon: 0.0792
+2025-05-17 14:27:30,395 - INFO - Episode 506, Total Reward: -21.0, Average Loss: 0.0021, Epsilon: 0.0788
+2025-05-17 14:27:45,158 - INFO - Episode 507, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0784
+2025-05-17 14:28:03,619 - INFO - Episode 508, Total Reward: -19.0, Average Loss: 0.0019, Epsilon: 0.0780
+2025-05-17 14:28:19,474 - INFO - Episode 509, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0776
+2025-05-17 14:28:47,311 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 510
+        STEP: 437,610
+        BEST REWARD: -17.0
+        EPSILON: 0.0772
+        ------------------------------------------------------------
+        
+2025-05-17 14:28:47,314 - INFO - Checkpointing at episode 510
+2025-05-17 14:28:47,314 - INFO - Episode 510, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0772
+2025-05-17 14:29:07,509 - INFO - Episode 511, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0768
+2025-05-17 14:29:25,445 - INFO - Episode 512, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0764
+2025-05-17 14:29:43,968 - INFO - Episode 513, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0760
+2025-05-17 14:29:59,617 - INFO - Episode 514, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0757
+2025-05-17 14:30:16,559 - INFO - Episode 515, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0753
+2025-05-17 14:30:32,377 - INFO - Episode 516, Total Reward: -21.0, Average Loss: 0.0010, Epsilon: 0.0749
+2025-05-17 14:30:48,108 - INFO - Episode 517, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0745
+2025-05-17 14:31:04,724 - INFO - Episode 518, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.0742
+2025-05-17 14:31:25,324 - INFO - Episode 519, Total Reward: -18.0, Average Loss: 0.0012, Epsilon: 0.0738
+2025-05-17 14:31:58,182 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 520
+        STEP: 447,151
+        BEST REWARD: -17.0
+        EPSILON: 0.0734
+        ------------------------------------------------------------
+        
+2025-05-17 14:31:58,184 - INFO - Checkpointing at episode 520
+2025-05-17 14:31:58,184 - INFO - Episode 520, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.0734
+2025-05-17 14:32:16,540 - INFO - Episode 521, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0731
+2025-05-17 14:32:38,309 - INFO - Episode 522, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0727
+2025-05-17 14:32:57,094 - INFO - Episode 523, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0723
+2025-05-17 14:33:14,129 - INFO - Episode 524, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0720
+2025-05-17 14:33:29,853 - INFO - Episode 525, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0716
+2025-05-17 14:33:48,306 - INFO - Episode 526, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0712
+2025-05-17 14:34:06,543 - INFO - Episode 527, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0709
+2025-05-17 14:34:24,845 - INFO - Episode 528, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0705
+2025-05-17 14:34:41,429 - INFO - Episode 529, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0702
+2025-05-17 14:35:07,084 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 530
+        STEP: 456,842
+        BEST REWARD: -17.0
+        EPSILON: 0.0698
+        ------------------------------------------------------------
+        
+2025-05-17 14:35:07,086 - INFO - Checkpointing at episode 530
+2025-05-17 14:35:07,086 - INFO - Episode 530, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0698
+2025-05-17 14:35:27,237 - INFO - Episode 531, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0695
+2025-05-17 14:35:49,040 - INFO - Episode 532, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0691
+2025-05-17 14:36:06,386 - INFO - Episode 533, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.0688
+2025-05-17 14:36:28,680 - INFO - Episode 534, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0684
+2025-05-17 14:36:47,131 - INFO - Episode 535, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0681
+2025-05-17 14:37:10,052 - INFO - Episode 536, Total Reward: -18.0, Average Loss: 0.0013, Epsilon: 0.0678
+2025-05-17 14:37:26,454 - INFO - Episode 537, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0674
+2025-05-17 14:37:41,981 - INFO - Episode 538, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0671
+2025-05-17 14:37:58,851 - INFO - Episode 539, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0668
+2025-05-17 14:38:25,493 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 540
+        STEP: 467,025
+        BEST REWARD: -17.0
+        EPSILON: 0.0664
+        ------------------------------------------------------------
+        
+2025-05-17 14:38:25,494 - INFO - Checkpointing at episode 540
+2025-05-17 14:38:25,495 - INFO - Episode 540, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0664
+2025-05-17 14:38:48,424 - INFO - Episode 541, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0661
+2025-05-17 14:39:02,232 - INFO - Episode 542, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0658
+2025-05-17 14:39:23,446 - INFO - Episode 543, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0654
+2025-05-17 14:39:39,819 - INFO - Episode 544, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0651
+2025-05-17 14:39:58,258 - INFO - Episode 545, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0648
+2025-05-17 14:40:16,144 - INFO - Episode 546, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0645
+2025-05-17 14:40:32,296 - INFO - Episode 547, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0641
+2025-05-17 14:40:48,431 - INFO - Episode 548, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0638
+2025-05-17 14:41:04,407 - INFO - Episode 549, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0635
+2025-05-17 14:41:34,872 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 550
+        STEP: 476,920
+        BEST REWARD: -17.0
+        EPSILON: 0.0632
+        ------------------------------------------------------------
+        
+2025-05-17 14:41:34,873 - INFO - Checkpointing at episode 550
+2025-05-17 14:41:34,874 - INFO - Episode 550, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0632
+2025-05-17 14:41:56,050 - INFO - Episode 551, Total Reward: -20.0, Average Loss: 0.0021, Epsilon: 0.0629
+2025-05-17 14:42:14,578 - INFO - Episode 552, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0625
+2025-05-17 14:42:33,653 - INFO - Episode 553, Total Reward: -19.0, Average Loss: 0.0017, Epsilon: 0.0622
+2025-05-17 14:42:51,225 - INFO - Episode 554, Total Reward: -20.0, Average Loss: 0.0017, Epsilon: 0.0619
+2025-05-17 14:43:07,634 - INFO - Episode 555, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0616
+2025-05-17 14:43:27,409 - INFO - Episode 556, Total Reward: -20.0, Average Loss: 0.0019, Epsilon: 0.0613
+2025-05-17 14:43:43,505 - INFO - Episode 557, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0610
+2025-05-17 14:43:59,352 - INFO - Episode 558, Total Reward: -21.0, Average Loss: 0.0019, Epsilon: 0.0607
+2025-05-17 14:44:21,750 - INFO - Episode 559, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0604
+2025-05-17 14:44:51,328 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 560
+        STEP: 487,567
+        BEST REWARD: -17.0
+        EPSILON: 0.0601
+        ------------------------------------------------------------
+        
+2025-05-17 14:44:51,329 - INFO - Checkpointing at episode 560
+2025-05-17 14:44:51,330 - INFO - Episode 560, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0601
+2025-05-17 14:45:07,105 - INFO - Episode 561, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0598
+2025-05-17 14:45:24,787 - INFO - Episode 562, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0595
+2025-05-17 14:45:42,019 - INFO - Episode 563, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0592
+2025-05-17 14:46:01,481 - INFO - Episode 564, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0589
+2025-05-17 14:46:17,179 - INFO - Episode 565, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0586
+2025-05-17 14:46:39,715 - INFO - Episode 566, Total Reward: -18.0, Average Loss: 0.0018, Epsilon: 0.0583
+2025-05-17 14:46:54,794 - INFO - Episode 567, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0580
+2025-05-17 14:47:12,458 - INFO - Episode 568, Total Reward: -20.0, Average Loss: 0.0017, Epsilon: 0.0577
+2025-05-17 14:47:30,020 - INFO - Episode 569, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0574
+2025-05-17 14:47:58,021 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 570
+        STEP: 497,723
+        BEST REWARD: -17.0
+        EPSILON: 0.0571
+        ------------------------------------------------------------
+        
+2025-05-17 14:47:58,023 - INFO - Checkpointing at episode 570
+2025-05-17 14:47:58,024 - INFO - Episode 570, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0571
+2025-05-17 14:48:15,658 - INFO - Episode 571, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0569
+2025-05-17 14:48:31,432 - INFO - Episode 572, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0566
+2025-05-17 14:48:49,461 - INFO - Episode 573, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0563
+2025-05-17 14:49:05,399 - INFO - Episode 574, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0560
+2025-05-17 14:49:23,370 - INFO - Episode 575, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0557
+2025-05-17 14:49:40,123 - INFO - Episode 576, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0555
+2025-05-17 14:49:54,823 - INFO - Episode 577, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0552
+2025-05-17 14:50:14,000 - INFO - Episode 578, Total Reward: -20.0, Average Loss: 0.0017, Epsilon: 0.0549
+2025-05-17 14:50:32,594 - INFO - Episode 579, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0546
+2025-05-17 14:50:56,505 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 580
+        STEP: 507,330
+        BEST REWARD: -17.0
+        EPSILON: 0.0544
+        ------------------------------------------------------------
+        
+2025-05-17 14:50:56,506 - INFO - Checkpointing at episode 580
+2025-05-17 14:50:56,506 - INFO - Episode 580, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0544
+2025-05-17 14:51:13,792 - INFO - Episode 581, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0541
+2025-05-17 14:51:33,664 - INFO - Episode 582, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0538
+2025-05-17 14:51:55,836 - INFO - Episode 583, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0535
+2025-05-17 14:52:15,191 - INFO - Episode 584, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0533
+2025-05-17 14:52:31,807 - INFO - Episode 585, Total Reward: -21.0, Average Loss: 0.0021, Epsilon: 0.0530
+2025-05-17 14:52:48,667 - INFO - Episode 586, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0527
+2025-05-17 14:53:03,725 - INFO - Episode 587, Total Reward: -21.0, Average Loss: 0.0018, Epsilon: 0.0525
+2025-05-17 14:53:21,437 - INFO - Episode 588, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0522
+2025-05-17 14:53:38,674 - INFO - Episode 589, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0520
+2025-05-17 14:54:10,876 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 590
+        STEP: 517,476
+        BEST REWARD: -17.0
+        EPSILON: 0.0517
+        ------------------------------------------------------------
+        
+2025-05-17 14:54:10,889 - INFO - Checkpointing at episode 590
+2025-05-17 14:54:10,892 - INFO - Episode 590, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0517
+2025-05-17 14:54:27,980 - INFO - Episode 591, Total Reward: -20.0, Average Loss: 0.0019, Epsilon: 0.0514
+2025-05-17 14:54:53,858 - INFO - Episode 592, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0512
+2025-05-17 14:55:15,511 - INFO - Episode 593, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0509
+2025-05-17 14:55:33,640 - INFO - Episode 594, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0507
+2025-05-17 14:55:49,239 - INFO - Episode 595, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0504
+2025-05-17 14:56:08,828 - INFO - Episode 596, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0502
+2025-05-17 14:56:28,065 - INFO - Episode 597, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0499
+2025-05-17 14:56:47,254 - INFO - Episode 598, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0497
+2025-05-17 14:57:07,013 - INFO - Episode 599, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0494
+2025-05-17 14:57:25,023 - INFO - Updated target network at episode 600
+2025-05-17 14:57:36,210 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 600
+        STEP: 526,864
+        BEST REWARD: -17.0
+        EPSILON: 0.0492
+        ------------------------------------------------------------
+        
+2025-05-17 14:57:36,211 - INFO - Checkpointing at episode 600
+2025-05-17 14:57:36,212 - INFO - Episode 600, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.0492
+2025-05-17 14:57:59,144 - INFO - Episode 601, Total Reward: -21.0, Average Loss: 0.0098, Epsilon: 0.0489
+2025-05-17 14:58:22,520 - INFO - Episode 602, Total Reward: -21.0, Average Loss: 0.0054, Epsilon: 0.0487
+2025-05-17 14:58:48,939 - INFO - Episode 603, Total Reward: -20.0, Average Loss: 0.0041, Epsilon: 0.0484
+2025-05-17 14:59:10,720 - INFO - Episode 604, Total Reward: -20.0, Average Loss: 0.0038, Epsilon: 0.0482
+2025-05-17 14:59:35,418 - INFO - Episode 605, Total Reward: -19.0, Average Loss: 0.0033, Epsilon: 0.0479
+2025-05-17 14:59:57,704 - INFO - Episode 606, Total Reward: -18.0, Average Loss: 0.0033, Epsilon: 0.0477
+2025-05-17 15:00:19,717 - INFO - Episode 607, Total Reward: -19.0, Average Loss: 0.0027, Epsilon: 0.0475
+2025-05-17 15:00:41,159 - INFO - Episode 608, Total Reward: -20.0, Average Loss: 0.0030, Epsilon: 0.0472
+2025-05-17 15:01:05,351 - INFO - Episode 609, Total Reward: -21.0, Average Loss: 0.0025, Epsilon: 0.0470
+2025-05-17 15:01:39,756 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 610
+        STEP: 538,321
+        BEST REWARD: -17.0
+        EPSILON: 0.0468
+        ------------------------------------------------------------
+        
+2025-05-17 15:01:39,757 - INFO - Checkpointing at episode 610
+2025-05-17 15:01:39,758 - INFO - Episode 610, Total Reward: -20.0, Average Loss: 0.0025, Epsilon: 0.0468
+2025-05-17 15:02:11,266 - INFO - Episode 611, Total Reward: -21.0, Average Loss: 0.0025, Epsilon: 0.0465
+2025-05-17 15:02:34,708 - INFO - Episode 612, Total Reward: -20.0, Average Loss: 0.0021, Epsilon: 0.0463
+2025-05-17 15:02:51,729 - INFO - Episode 613, Total Reward: -21.0, Average Loss: 0.0023, Epsilon: 0.0461
+2025-05-17 15:03:18,196 - INFO - New best model saved with reward: -16.0
+2025-05-17 15:03:18,197 - INFO - Episode 614, Total Reward: -16.0, Average Loss: 0.0022, Epsilon: 0.0458
+2025-05-17 15:03:37,500 - INFO - Episode 615, Total Reward: -20.0, Average Loss: 0.0021, Epsilon: 0.0456
+2025-05-17 15:04:04,016 - INFO - Episode 616, Total Reward: -18.0, Average Loss: 0.0021, Epsilon: 0.0454
+2025-05-17 15:04:26,243 - INFO - Episode 617, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0452
+2025-05-17 15:04:47,429 - INFO - Episode 618, Total Reward: -20.0, Average Loss: 0.0017, Epsilon: 0.0449
+2025-05-17 15:05:08,114 - INFO - Episode 619, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0447
+2025-05-17 15:05:36,741 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 620
+        STEP: 549,575
+        BEST REWARD: -16.0
+        EPSILON: 0.0445
+        ------------------------------------------------------------
+        
+2025-05-17 15:05:36,743 - INFO - Checkpointing at episode 620
+2025-05-17 15:05:36,744 - INFO - Episode 620, Total Reward: -21.0, Average Loss: 0.0020, Epsilon: 0.0445
+2025-05-17 15:05:56,768 - INFO - Episode 621, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0443
+2025-05-17 15:06:26,470 - INFO - Episode 622, Total Reward: -17.0, Average Loss: 0.0018, Epsilon: 0.0440
+2025-05-17 15:06:48,100 - INFO - Episode 623, Total Reward: -17.0, Average Loss: 0.0019, Epsilon: 0.0438
+2025-05-17 15:07:11,445 - INFO - Episode 624, Total Reward: -19.0, Average Loss: 0.0019, Epsilon: 0.0436
+2025-05-17 15:07:31,325 - INFO - Episode 625, Total Reward: -21.0, Average Loss: 0.0021, Epsilon: 0.0434
+2025-05-17 15:07:52,095 - INFO - Episode 626, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0432
+2025-05-17 15:08:21,365 - INFO - New best model saved with reward: -15.0
+2025-05-17 15:08:21,366 - INFO - Episode 627, Total Reward: -15.0, Average Loss: 0.0016, Epsilon: 0.0429
+2025-05-17 15:08:41,280 - INFO - Episode 628, Total Reward: -19.0, Average Loss: 0.0019, Epsilon: 0.0427
+2025-05-17 15:08:59,260 - INFO - Episode 629, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0425
+2025-05-17 15:09:32,281 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 630
+        STEP: 561,579
+        BEST REWARD: -15.0
+        EPSILON: 0.0423
+        ------------------------------------------------------------
+        
+2025-05-17 15:09:32,283 - INFO - Checkpointing at episode 630
+2025-05-17 15:09:32,283 - INFO - Episode 630, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0423
+2025-05-17 15:09:53,228 - INFO - Episode 631, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0421
+2025-05-17 15:10:15,937 - INFO - Episode 632, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0419
+2025-05-17 15:10:37,200 - INFO - Episode 633, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0417
+2025-05-17 15:10:55,334 - INFO - Episode 634, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0415
+2025-05-17 15:11:15,026 - INFO - Episode 635, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0413
+2025-05-17 15:11:38,996 - INFO - Episode 636, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0410
+2025-05-17 15:11:58,669 - INFO - Episode 637, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0408
+2025-05-17 15:12:17,801 - INFO - Episode 638, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0406
+2025-05-17 15:12:40,968 - INFO - Episode 639, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0404
+2025-05-17 15:13:08,777 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 640
+        STEP: 572,637
+        BEST REWARD: -15.0
+        EPSILON: 0.0402
+        ------------------------------------------------------------
+        
+2025-05-17 15:13:08,779 - INFO - Checkpointing at episode 640
+2025-05-17 15:13:08,780 - INFO - Episode 640, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0402
+2025-05-17 15:13:28,534 - INFO - Episode 641, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0400
+2025-05-17 15:13:50,064 - INFO - Episode 642, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0398
+2025-05-17 15:14:10,848 - INFO - Episode 643, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0396
+2025-05-17 15:14:35,881 - INFO - Episode 644, Total Reward: -19.0, Average Loss: 0.0012, Epsilon: 0.0394
+2025-05-17 15:14:58,763 - INFO - Episode 645, Total Reward: -17.0, Average Loss: 0.0015, Epsilon: 0.0392
+2025-05-17 15:15:20,820 - INFO - Episode 646, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0390
+2025-05-17 15:15:42,151 - INFO - Episode 647, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0388
+2025-05-17 15:16:12,172 - INFO - Episode 648, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0387
+2025-05-17 15:16:34,674 - INFO - Episode 649, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0385
+2025-05-17 15:17:01,542 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 650
+        STEP: 584,153
+        BEST REWARD: -15.0
+        EPSILON: 0.0383
+        ------------------------------------------------------------
+        
+2025-05-17 15:17:01,546 - INFO - Checkpointing at episode 650
+2025-05-17 15:17:01,547 - INFO - Episode 650, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0383
+2025-05-17 15:17:20,154 - INFO - Episode 651, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0381
+2025-05-17 15:17:41,832 - INFO - Episode 652, Total Reward: -18.0, Average Loss: 0.0014, Epsilon: 0.0379
+2025-05-17 15:17:58,755 - INFO - Episode 653, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0377
+2025-05-17 15:18:21,864 - INFO - Episode 654, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0375
+2025-05-17 15:18:41,799 - INFO - Episode 655, Total Reward: -20.0, Average Loss: 0.0011, Epsilon: 0.0373
+2025-05-17 15:19:08,124 - INFO - Episode 656, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0371
+2025-05-17 15:19:31,356 - INFO - Episode 657, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0369
+2025-05-17 15:19:56,602 - INFO - Episode 658, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0368
+2025-05-17 15:20:22,777 - INFO - Episode 659, Total Reward: -18.0, Average Loss: 0.0012, Epsilon: 0.0366
+2025-05-17 15:20:50,280 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 660
+        STEP: 594,720
+        BEST REWARD: -15.0
+        EPSILON: 0.0364
+        ------------------------------------------------------------
+        
+2025-05-17 15:20:50,281 - INFO - Checkpointing at episode 660
+2025-05-17 15:20:50,282 - INFO - Episode 660, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0364
+2025-05-17 15:21:10,281 - INFO - Episode 661, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0362
+2025-05-17 15:21:31,121 - INFO - Episode 662, Total Reward: -18.0, Average Loss: 0.0012, Epsilon: 0.0360
+2025-05-17 15:21:48,084 - INFO - Episode 663, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.0359
+2025-05-17 15:22:05,196 - INFO - Episode 664, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0357
+2025-05-17 15:22:22,566 - INFO - Episode 665, Total Reward: -20.0, Average Loss: 0.0012, Epsilon: 0.0355
+2025-05-17 15:22:40,581 - INFO - Episode 666, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0353
+2025-05-17 15:23:00,255 - INFO - Episode 667, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.0351
+2025-05-17 15:23:21,702 - INFO - Episode 668, Total Reward: -18.0, Average Loss: 0.0014, Epsilon: 0.0350
+2025-05-17 15:23:39,436 - INFO - Episode 669, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0348
+2025-05-17 15:24:09,092 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 670
+        STEP: 604,743
+        BEST REWARD: -15.0
+        EPSILON: 0.0346
+        ------------------------------------------------------------
+        
+2025-05-17 15:24:09,097 - INFO - Checkpointing at episode 670
+2025-05-17 15:24:09,098 - INFO - Episode 670, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0346
+2025-05-17 15:24:28,701 - INFO - Episode 671, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0344
+2025-05-17 15:24:52,841 - INFO - Episode 672, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0343
+2025-05-17 15:25:12,196 - INFO - Episode 673, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.0341
+2025-05-17 15:25:30,147 - INFO - Episode 674, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0339
+2025-05-17 15:25:47,512 - INFO - Episode 675, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0338
+2025-05-17 15:26:01,843 - INFO - Episode 676, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.0336
+2025-05-17 15:26:25,273 - INFO - Episode 677, Total Reward: -20.0, Average Loss: 0.0010, Epsilon: 0.0334
+2025-05-17 15:26:45,333 - INFO - Episode 678, Total Reward: -21.0, Average Loss: 0.0011, Epsilon: 0.0333
+2025-05-17 15:27:02,636 - INFO - Episode 679, Total Reward: -20.0, Average Loss: 0.0012, Epsilon: 0.0331
+2025-05-17 15:27:33,877 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 680
+        STEP: 614,688
+        BEST REWARD: -15.0
+        EPSILON: 0.0329
+        ------------------------------------------------------------
+        
+2025-05-17 15:27:33,878 - INFO - Checkpointing at episode 680
+2025-05-17 15:27:33,879 - INFO - Episode 680, Total Reward: -19.0, Average Loss: 0.0011, Epsilon: 0.0329
+2025-05-17 15:27:58,471 - INFO - Episode 681, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0328
+2025-05-17 15:28:21,642 - INFO - Episode 682, Total Reward: -20.0, Average Loss: 0.0012, Epsilon: 0.0326
+2025-05-17 15:28:48,924 - INFO - Episode 683, Total Reward: -19.0, Average Loss: 0.0012, Epsilon: 0.0324
+2025-05-17 15:29:20,213 - INFO - Episode 684, Total Reward: -17.0, Average Loss: 0.0012, Epsilon: 0.0323
+2025-05-17 15:29:45,768 - INFO - Episode 685, Total Reward: -20.0, Average Loss: 0.0012, Epsilon: 0.0321
+2025-05-17 15:30:10,638 - INFO - Episode 686, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0319
+2025-05-17 15:30:33,162 - INFO - Episode 687, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0318
+2025-05-17 15:30:55,048 - INFO - Episode 688, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.0316
+2025-05-17 15:31:14,564 - INFO - Episode 689, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0315
+2025-05-17 15:31:44,939 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 690
+        STEP: 626,252
+        BEST REWARD: -15.0
+        EPSILON: 0.0313
+        ------------------------------------------------------------
+        
+2025-05-17 15:31:44,940 - INFO - Checkpointing at episode 690
+2025-05-17 15:31:44,940 - INFO - Episode 690, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0313
+2025-05-17 15:32:07,246 - INFO - Episode 691, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.0312
+2025-05-17 15:32:25,961 - INFO - Episode 692, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0310
+2025-05-17 15:32:48,635 - INFO - Episode 693, Total Reward: -18.0, Average Loss: 0.0013, Epsilon: 0.0308
+2025-05-17 15:33:07,331 - INFO - Episode 694, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0307
+2025-05-17 15:33:31,840 - INFO - Episode 695, Total Reward: -18.0, Average Loss: 0.0014, Epsilon: 0.0305
+2025-05-17 15:33:54,882 - INFO - Episode 696, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0304
+2025-05-17 15:34:19,604 - INFO - Episode 697, Total Reward: -17.0, Average Loss: 0.0012, Epsilon: 0.0302
+2025-05-17 15:34:36,967 - INFO - Episode 698, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0301
+2025-05-17 15:34:54,988 - INFO - Episode 699, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0299
+2025-05-17 15:35:15,056 - INFO - Updated target network at episode 700
+2025-05-17 15:35:23,679 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 700
+        STEP: 637,863
+        BEST REWARD: -15.0
+        EPSILON: 0.0298
+        ------------------------------------------------------------
+        
+2025-05-17 15:35:23,680 - INFO - Checkpointing at episode 700
+2025-05-17 15:35:23,680 - INFO - Episode 700, Total Reward: -18.0, Average Loss: 0.0012, Epsilon: 0.0298
+2025-05-17 15:35:46,277 - INFO - Episode 701, Total Reward: -19.0, Average Loss: 0.0097, Epsilon: 0.0296
+2025-05-17 15:36:10,734 - INFO - Episode 702, Total Reward: -19.0, Average Loss: 0.0048, Epsilon: 0.0295
+2025-05-17 15:36:28,718 - INFO - Episode 703, Total Reward: -20.0, Average Loss: 0.0037, Epsilon: 0.0293
+2025-05-17 15:36:47,649 - INFO - Episode 704, Total Reward: -21.0, Average Loss: 0.0034, Epsilon: 0.0292
+2025-05-17 15:37:11,625 - INFO - Episode 705, Total Reward: -17.0, Average Loss: 0.0030, Epsilon: 0.0290
+2025-05-17 15:37:41,388 - INFO - Episode 706, Total Reward: -15.0, Average Loss: 0.0026, Epsilon: 0.0289
+2025-05-17 15:38:03,491 - INFO - Episode 707, Total Reward: -18.0, Average Loss: 0.0024, Epsilon: 0.0288
+2025-05-17 15:38:28,859 - INFO - Episode 708, Total Reward: -18.0, Average Loss: 0.0022, Epsilon: 0.0286
+2025-05-17 15:38:49,864 - INFO - Episode 709, Total Reward: -20.0, Average Loss: 0.0020, Epsilon: 0.0285
+2025-05-17 15:39:23,800 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 710
+        STEP: 650,410
+        BEST REWARD: -15.0
+        EPSILON: 0.0283
+        ------------------------------------------------------------
+        
+2025-05-17 15:39:23,801 - INFO - Checkpointing at episode 710
+2025-05-17 15:39:23,801 - INFO - Episode 710, Total Reward: -17.0, Average Loss: 0.0021, Epsilon: 0.0283
+2025-05-17 15:39:49,221 - INFO - Episode 711, Total Reward: -18.0, Average Loss: 0.0019, Epsilon: 0.0282
+2025-05-17 15:40:11,556 - INFO - Episode 712, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0280
+2025-05-17 15:40:37,163 - INFO - Episode 713, Total Reward: -17.0, Average Loss: 0.0017, Epsilon: 0.0279
+2025-05-17 15:41:02,240 - INFO - Episode 714, Total Reward: -16.0, Average Loss: 0.0017, Epsilon: 0.0278
+2025-05-17 15:41:31,591 - INFO - Episode 715, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0276
+2025-05-17 15:41:51,257 - INFO - Episode 716, Total Reward: -21.0, Average Loss: 0.0018, Epsilon: 0.0275
+2025-05-17 15:42:19,477 - INFO - Episode 717, Total Reward: -17.0, Average Loss: 0.0017, Epsilon: 0.0274
+2025-05-17 15:42:40,025 - INFO - Episode 718, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0272
+2025-05-17 15:43:00,156 - INFO - Episode 719, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0271
+2025-05-17 15:43:33,479 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 720
+        STEP: 663,055
+        BEST REWARD: -15.0
+        EPSILON: 0.0269
+        ------------------------------------------------------------
+        
+2025-05-17 15:43:33,481 - INFO - Checkpointing at episode 720
+2025-05-17 15:43:33,486 - INFO - Episode 720, Total Reward: -17.0, Average Loss: 0.0017, Epsilon: 0.0269
+2025-05-17 15:44:00,055 - INFO - Episode 721, Total Reward: -17.0, Average Loss: 0.0017, Epsilon: 0.0268
+2025-05-17 15:44:21,849 - INFO - Episode 722, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0267
+2025-05-17 15:44:49,359 - INFO - Episode 723, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0265
+2025-05-17 15:45:17,036 - INFO - Episode 724, Total Reward: -15.0, Average Loss: 0.0016, Epsilon: 0.0264
+2025-05-17 15:45:44,504 - INFO - Episode 725, Total Reward: -16.0, Average Loss: 0.0017, Epsilon: 0.0263
+2025-05-17 15:46:12,526 - INFO - Episode 726, Total Reward: -15.0, Average Loss: 0.0017, Epsilon: 0.0261
+2025-05-17 15:46:31,670 - INFO - Episode 727, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0260
+2025-05-17 15:46:55,837 - INFO - Episode 728, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0259
+2025-05-17 15:47:15,695 - INFO - Episode 729, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0258
+2025-05-17 15:47:54,002 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 730
+        STEP: 676,508
+        BEST REWARD: -15.0
+        EPSILON: 0.0256
+        ------------------------------------------------------------
+        
+2025-05-17 15:47:54,003 - INFO - Checkpointing at episode 730
+2025-05-17 15:47:54,003 - INFO - Episode 730, Total Reward: -16.0, Average Loss: 0.0017, Epsilon: 0.0256
+2025-05-17 15:48:14,306 - INFO - Episode 731, Total Reward: -20.0, Average Loss: 0.0019, Epsilon: 0.0255
+2025-05-17 15:48:34,505 - INFO - Episode 732, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0254
+2025-05-17 15:49:03,960 - INFO - Episode 733, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0252
+2025-05-17 15:49:25,997 - INFO - Episode 734, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0251
+2025-05-17 15:49:48,986 - INFO - Episode 735, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0250
+2025-05-17 15:50:12,754 - INFO - Episode 736, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0249
+2025-05-17 15:50:36,378 - INFO - Episode 737, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0247
+2025-05-17 15:50:59,136 - INFO - Episode 738, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0246
+2025-05-17 15:51:18,637 - INFO - Episode 739, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0245
+2025-05-17 15:51:50,809 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 740
+        STEP: 688,644
+        BEST REWARD: -15.0
+        EPSILON: 0.0244
+        ------------------------------------------------------------
+        
+2025-05-17 15:51:50,811 - INFO - Checkpointing at episode 740
+2025-05-17 15:51:50,811 - INFO - Episode 740, Total Reward: -16.0, Average Loss: 0.0015, Epsilon: 0.0244
+2025-05-17 15:52:11,193 - INFO - Episode 741, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0243
+2025-05-17 15:52:39,501 - INFO - Episode 742, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0241
+2025-05-17 15:53:15,643 - INFO - Episode 743, Total Reward: -17.0, Average Loss: 0.0014, Epsilon: 0.0240
+2025-05-17 15:53:47,558 - INFO - Episode 744, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0239
+2025-05-17 15:54:06,891 - INFO - Episode 745, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0238
+2025-05-17 15:54:32,656 - INFO - Episode 746, Total Reward: -18.0, Average Loss: 0.0013, Epsilon: 0.0237
+2025-05-17 15:54:56,645 - INFO - Episode 747, Total Reward: -20.0, Average Loss: 0.0013, Epsilon: 0.0235
+2025-05-17 15:55:20,580 - INFO - Episode 748, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0234
+2025-05-17 15:55:46,303 - INFO - Episode 749, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0233
+2025-05-17 15:56:22,825 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 750
+        STEP: 701,649
+        BEST REWARD: -15.0
+        EPSILON: 0.0232
+        ------------------------------------------------------------
+        
+2025-05-17 15:56:22,826 - INFO - Checkpointing at episode 750
+2025-05-17 15:56:22,827 - INFO - Episode 750, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0232
+2025-05-17 15:56:48,754 - INFO - Episode 751, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0231
+2025-05-17 15:57:08,342 - INFO - Episode 752, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0229
+2025-05-17 15:57:28,078 - INFO - Episode 753, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0228
+2025-05-17 15:57:59,078 - INFO - Episode 754, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0227
+2025-05-17 15:58:29,480 - INFO - Episode 755, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0226
+2025-05-17 15:58:54,241 - INFO - Episode 756, Total Reward: -19.0, Average Loss: 0.0017, Epsilon: 0.0225
+2025-05-17 15:59:26,457 - INFO - Episode 757, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0224
+2025-05-17 15:59:51,001 - INFO - Episode 758, Total Reward: -20.0, Average Loss: 0.0018, Epsilon: 0.0223
+2025-05-17 16:00:22,452 - INFO - Episode 759, Total Reward: -17.0, Average Loss: 0.0013, Epsilon: 0.0222
+2025-05-17 16:00:53,060 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 760
+        STEP: 713,865
+        BEST REWARD: -15.0
+        EPSILON: 0.0220
+        ------------------------------------------------------------
+        
+2025-05-17 16:00:53,066 - INFO - Checkpointing at episode 760
+2025-05-17 16:00:53,066 - INFO - Episode 760, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0220
+2025-05-17 16:01:20,661 - INFO - Episode 761, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0219
+2025-05-17 16:01:45,229 - INFO - Episode 762, Total Reward: -21.0, Average Loss: 0.0017, Epsilon: 0.0218
+2025-05-17 16:02:14,738 - INFO - Episode 763, Total Reward: -16.0, Average Loss: 0.0015, Epsilon: 0.0217
+2025-05-17 16:02:33,498 - INFO - Episode 764, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0216
+2025-05-17 16:02:59,334 - INFO - Episode 765, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0215
+2025-05-17 16:03:23,203 - INFO - Episode 766, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0214
+2025-05-17 16:03:45,431 - INFO - Episode 767, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0213
+2025-05-17 16:04:15,670 - INFO - Episode 768, Total Reward: -18.0, Average Loss: 0.0014, Epsilon: 0.0212
+2025-05-17 16:04:42,345 - INFO - Episode 769, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0211
+2025-05-17 16:05:18,084 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 770
+        STEP: 726,866
+        BEST REWARD: -15.0
+        EPSILON: 0.0210
+        ------------------------------------------------------------
+        
+2025-05-17 16:05:18,087 - INFO - Checkpointing at episode 770
+2025-05-17 16:05:18,089 - INFO - Episode 770, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0210
+2025-05-17 16:05:43,832 - INFO - Episode 771, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0209
+2025-05-17 16:06:07,205 - INFO - Episode 772, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0208
+2025-05-17 16:06:30,710 - INFO - Episode 773, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0207
+2025-05-17 16:06:56,440 - INFO - Episode 774, Total Reward: -16.0, Average Loss: 0.0014, Epsilon: 0.0206
+2025-05-17 16:07:20,020 - INFO - Episode 775, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0205
+2025-05-17 16:07:42,414 - INFO - Episode 776, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0203
+2025-05-17 16:08:14,148 - INFO - Episode 777, Total Reward: -18.0, Average Loss: 0.0014, Epsilon: 0.0202
+2025-05-17 16:08:35,187 - INFO - Episode 778, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0201
+2025-05-17 16:08:55,339 - INFO - Episode 779, Total Reward: -21.0, Average Loss: 0.0012, Epsilon: 0.0200
+2025-05-17 16:09:30,908 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 780
+        STEP: 738,832
+        BEST REWARD: -15.0
+        EPSILON: 0.0199
+        ------------------------------------------------------------
+        
+2025-05-17 16:09:30,909 - INFO - Checkpointing at episode 780
+2025-05-17 16:09:30,910 - INFO - Episode 780, Total Reward: -20.0, Average Loss: 0.0014, Epsilon: 0.0199
+2025-05-17 16:09:57,748 - INFO - Episode 781, Total Reward: -21.0, Average Loss: 0.0013, Epsilon: 0.0198
+2025-05-17 16:10:24,088 - INFO - Episode 782, Total Reward: -21.0, Average Loss: 0.0014, Epsilon: 0.0197
+2025-05-17 16:10:55,414 - INFO - Episode 783, Total Reward: -17.0, Average Loss: 0.0013, Epsilon: 0.0196
+2025-05-17 16:11:22,383 - INFO - Episode 784, Total Reward: -19.0, Average Loss: 0.0013, Epsilon: 0.0195
+2025-05-17 16:11:54,173 - INFO - Episode 785, Total Reward: -17.0, Average Loss: 0.0013, Epsilon: 0.0195
+2025-05-17 16:12:12,839 - INFO - Episode 786, Total Reward: -21.0, Average Loss: 0.0016, Epsilon: 0.0194
+2025-05-17 16:12:37,716 - INFO - Episode 787, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0193
+2025-05-17 16:12:59,427 - INFO - Episode 788, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0192
+2025-05-17 16:13:27,724 - INFO - Episode 789, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0191
+2025-05-17 16:14:07,159 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 790
+        STEP: 751,590
+        BEST REWARD: -15.0
+        EPSILON: 0.0190
+        ------------------------------------------------------------
+        
+2025-05-17 16:14:07,161 - INFO - Checkpointing at episode 790
+2025-05-17 16:14:07,161 - INFO - Episode 790, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0190
+2025-05-17 16:14:34,041 - INFO - Episode 791, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0189
+2025-05-17 16:15:03,688 - INFO - Episode 792, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0188
+2025-05-17 16:15:34,723 - INFO - Episode 793, Total Reward: -17.0, Average Loss: 0.0016, Epsilon: 0.0187
+2025-05-17 16:15:56,335 - INFO - Episode 794, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0186
+2025-05-17 16:16:17,502 - INFO - Episode 795, Total Reward: -19.0, Average Loss: 0.0017, Epsilon: 0.0185
+2025-05-17 16:16:39,558 - INFO - Episode 796, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0184
+2025-05-17 16:17:02,349 - INFO - Episode 797, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0183
+2025-05-17 16:17:29,781 - INFO - Episode 798, Total Reward: -16.0, Average Loss: 0.0017, Epsilon: 0.0182
+2025-05-17 16:17:56,936 - INFO - Episode 799, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0181
+2025-05-17 16:18:24,675 - INFO - Updated target network at episode 800
+2025-05-17 16:18:34,186 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 800
+        STEP: 764,443
+        BEST REWARD: -15.0
+        EPSILON: 0.0180
+        ------------------------------------------------------------
+        
+2025-05-17 16:18:34,188 - INFO - Checkpointing at episode 800
+2025-05-17 16:18:34,188 - INFO - Episode 800, Total Reward: -17.0, Average Loss: 0.0014, Epsilon: 0.0180
+2025-05-17 16:18:55,209 - INFO - Episode 801, Total Reward: -21.0, Average Loss: 0.0105, Epsilon: 0.0180
+2025-05-17 16:19:26,042 - INFO - Episode 802, Total Reward: -17.0, Average Loss: 0.0056, Epsilon: 0.0179
+2025-05-17 16:19:55,710 - INFO - Episode 803, Total Reward: -17.0, Average Loss: 0.0039, Epsilon: 0.0178
+2025-05-17 16:20:23,648 - INFO - Episode 804, Total Reward: -20.0, Average Loss: 0.0033, Epsilon: 0.0177
+2025-05-17 16:20:52,241 - INFO - Episode 805, Total Reward: -17.0, Average Loss: 0.0029, Epsilon: 0.0176
+2025-05-17 16:21:15,224 - INFO - Episode 806, Total Reward: -21.0, Average Loss: 0.0027, Epsilon: 0.0175
+2025-05-17 16:21:43,474 - INFO - Episode 807, Total Reward: -20.0, Average Loss: 0.0024, Epsilon: 0.0174
+2025-05-17 16:22:22,061 - INFO - Episode 808, Total Reward: -16.0, Average Loss: 0.0022, Epsilon: 0.0173
+2025-05-17 16:22:51,325 - INFO - Episode 809, Total Reward: -17.0, Average Loss: 0.0023, Epsilon: 0.0172
+2025-05-17 16:23:30,289 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 810
+        STEP: 778,226
+        BEST REWARD: -15.0
+        EPSILON: 0.0172
+        ------------------------------------------------------------
+        
+2025-05-17 16:23:30,291 - INFO - Checkpointing at episode 810
+2025-05-17 16:23:30,291 - INFO - Episode 810, Total Reward: -20.0, Average Loss: 0.0019, Epsilon: 0.0172
+2025-05-17 16:24:00,825 - INFO - Episode 811, Total Reward: -19.0, Average Loss: 0.0023, Epsilon: 0.0171
+2025-05-17 16:24:31,432 - INFO - Episode 812, Total Reward: -17.0, Average Loss: 0.0019, Epsilon: 0.0170
+2025-05-17 16:24:54,926 - INFO - Episode 813, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0169
+2025-05-17 16:25:25,192 - INFO - Episode 814, Total Reward: -18.0, Average Loss: 0.0019, Epsilon: 0.0168
+2025-05-17 16:25:42,431 - INFO - Episode 815, Total Reward: -20.0, Average Loss: 0.0019, Epsilon: 0.0167
+2025-05-17 16:26:01,452 - INFO - Episode 816, Total Reward: -21.0, Average Loss: 0.0019, Epsilon: 0.0167
+2025-05-17 16:26:25,244 - INFO - Episode 817, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0166
+2025-05-17 16:26:52,440 - INFO - Episode 818, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0165
+2025-05-17 16:27:11,094 - INFO - Episode 819, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0164
+2025-05-17 16:27:42,904 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 820
+        STEP: 790,782
+        BEST REWARD: -15.0
+        EPSILON: 0.0163
+        ------------------------------------------------------------
+        
+2025-05-17 16:27:42,906 - INFO - Checkpointing at episode 820
+2025-05-17 16:27:42,906 - INFO - Episode 820, Total Reward: -18.0, Average Loss: 0.0015, Epsilon: 0.0163
+2025-05-17 16:28:10,051 - INFO - Episode 821, Total Reward: -18.0, Average Loss: 0.0018, Epsilon: 0.0162
+2025-05-17 16:28:34,802 - INFO - Episode 822, Total Reward: -17.0, Average Loss: 0.0016, Epsilon: 0.0162
+2025-05-17 16:29:02,787 - INFO - Episode 823, Total Reward: -15.0, Average Loss: 0.0016, Epsilon: 0.0161
+2025-05-17 16:29:35,728 - INFO - Episode 824, Total Reward: -15.0, Average Loss: 0.0018, Epsilon: 0.0160
+2025-05-17 16:29:59,359 - INFO - Episode 825, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0159
+2025-05-17 16:30:30,105 - INFO - Episode 826, Total Reward: -17.0, Average Loss: 0.0017, Epsilon: 0.0158
+2025-05-17 16:31:00,249 - INFO - Episode 827, Total Reward: -15.0, Average Loss: 0.0019, Epsilon: 0.0158
+2025-05-17 16:31:22,918 - INFO - Episode 828, Total Reward: -20.0, Average Loss: 0.0017, Epsilon: 0.0157
+2025-05-17 16:31:48,167 - INFO - Episode 829, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0156
+2025-05-17 16:32:23,370 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 830
+        STEP: 805,478
+        BEST REWARD: -15.0
+        EPSILON: 0.0155
+        ------------------------------------------------------------
+        
+2025-05-17 16:32:23,371 - INFO - Checkpointing at episode 830
+2025-05-17 16:32:23,372 - INFO - Episode 830, Total Reward: -20.0, Average Loss: 0.0017, Epsilon: 0.0155
+2025-05-17 16:32:47,609 - INFO - Episode 831, Total Reward: -17.0, Average Loss: 0.0017, Epsilon: 0.0154
+2025-05-17 16:33:07,244 - INFO - Episode 832, Total Reward: -21.0, Average Loss: 0.0015, Epsilon: 0.0154
+2025-05-17 16:33:28,699 - INFO - Episode 833, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0153
+2025-05-17 16:33:50,443 - INFO - Episode 834, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0152
+2025-05-17 16:34:15,705 - INFO - Episode 835, Total Reward: -20.0, Average Loss: 0.0016, Epsilon: 0.0151
+2025-05-17 16:34:45,146 - INFO - Episode 836, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0151
+2025-05-17 16:35:16,042 - INFO - Episode 837, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0150
+2025-05-17 16:36:02,479 - INFO - New best model saved with reward: -11.0
+2025-05-17 16:36:02,480 - INFO - Episode 838, Total Reward: -11.0, Average Loss: 0.0016, Epsilon: 0.0149
+2025-05-17 16:36:29,052 - INFO - Episode 839, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0148
+2025-05-17 16:37:07,150 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 840
+        STEP: 819,183
+        BEST REWARD: -11.0
+        EPSILON: 0.0148
+        ------------------------------------------------------------
+        
+2025-05-17 16:37:07,152 - INFO - Checkpointing at episode 840
+2025-05-17 16:37:07,153 - INFO - Episode 840, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0148
+2025-05-17 16:37:32,636 - INFO - Episode 841, Total Reward: -18.0, Average Loss: 0.0017, Epsilon: 0.0147
+2025-05-17 16:38:01,331 - INFO - Episode 842, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0146
+2025-05-17 16:38:33,622 - INFO - Episode 843, Total Reward: -20.0, Average Loss: 0.0015, Epsilon: 0.0145
+2025-05-17 16:39:01,290 - INFO - Episode 844, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0145
+2025-05-17 16:39:35,453 - INFO - Episode 845, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0144
+2025-05-17 16:40:00,666 - INFO - Episode 846, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0143
+2025-05-17 16:40:37,859 - INFO - Episode 847, Total Reward: -15.0, Average Loss: 0.0018, Epsilon: 0.0143
+2025-05-17 16:41:12,050 - INFO - Episode 848, Total Reward: -19.0, Average Loss: 0.0019, Epsilon: 0.0142
+2025-05-17 16:41:44,146 - INFO - Episode 849, Total Reward: -18.0, Average Loss: 0.0016, Epsilon: 0.0141
+2025-05-17 16:42:21,210 - INFO - 
+        ------------------------------------------------------------
+        Saved checkpoint to model_run_6/checkpoint.pkl with following params:
+        EPISODE: 850
+        STEP: 832,922
+        BEST REWARD: -11.0
+        EPSILON: 0.0140
+        ------------------------------------------------------------
+        
+2025-05-17 16:42:21,212 - INFO - Checkpointing at episode 850
+2025-05-17 16:42:21,212 - INFO - Episode 850, Total Reward: -19.0, Average Loss: 0.0018, Epsilon: 0.0140
+2025-05-17 16:42:53,414 - INFO - Episode 851, Total Reward: -19.0, Average Loss: 0.0015, Epsilon: 0.0140
+2025-05-17 16:43:30,099 - INFO - Episode 852, Total Reward: -19.0, Average Loss: 0.0014, Epsilon: 0.0139
+2025-05-17 16:43:55,751 - INFO - Episode 853, Total Reward: -19.0, Average Loss: 0.0016, Epsilon: 0.0138
