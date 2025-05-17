@@ -41,10 +41,6 @@ MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
 CHECKPOINT_PATH = MODEL_DIR / "checkpoint.pkl"
 
-# LOAD_MODEL_DIR = MODEL_DIR
-# if not LOAD_MODEL_DIR.exists:
-#     raise ("LOAD_MODEL_DIR does not exist.")
-
 # Logfiles
 start_datetime = datetime.now().strftime("%Y%m%d_%H%M")
 log_file = LOG_DIR / f"logfile_{start_datetime}.txt"
@@ -129,30 +125,6 @@ def load_latest_checkpoint(checkpoint_path: Path):
     return checkpoint_data
 
 
-# def load_latest_model(model_dir):
-#     # Load the model
-#     model = DQN(action_dim).to(device)
-
-#     """Load the latest saved model from the model directory."""
-#     model_files = glob.glob(str(model_dir / "pong_dqn_episode_*.pth"))
-#     if not model_files:
-#         return model, 0
-
-#     # Get the latest model file
-#     latest_model = max(model_files, key=lambda x: int(x.split("_")[-1].split(".")[0]))
-#     episode_num = int(latest_model.split("_")[-1].split(".")[0])
-#     logging.info(f"Found latest_model @ {latest_model}")
-#     # logging.info(f"Found latest_model @ {latest_model}")
-
-#     logging.info(f"Loading latest_model @ {latest_model}")
-#     model.load_state_dict(
-#         torch.load(latest_model, map_location=device, weights_only=False)
-#     )
-#     logging.info(f"Loaded model from episode {episode_num}")
-
-#     return model, episode_num
-
-
 # Training parameters
 NUM_EPISODES = 10000
 BATCH_SIZE = 64  # Increased from 32
@@ -168,15 +140,6 @@ MIN_REPLAY_SIZE = 20000  # Minimum experiences before training
 # Initialize models and replay buffer
 model = DQN(action_dim).to(device)
 target_model = DQN(action_dim).to(device)
-
-# # Try to load the latest model
-# loaded_model, start_episode = load_latest_model(LOAD_MODEL_DIR)
-# if loaded_model is not None:
-#     model = loaded_model
-#     target_model.load_state_dict(model.state_dict())
-#     logging.info("Successfully loaded model and synchronized target model")
-# else:
-#     logging.info("No saved model found, starting from scratch")
 
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, eps=1e-4)
 
@@ -333,14 +296,6 @@ for episode in range(start_episode, NUM_EPISODES):
             checkpoint_path=CHECKPOINT_PATH,
         )
         logging.info(f"Checkpointing at episode {episode}")
-
-    # # Save the model periodically
-
-    # if (episode + 1) % 100 == 0:
-    #     torch.save(
-    #         model.state_dict(), MODEL_DIR / f"pong_dqn_episode_{episode + 1}.pth"
-    #     )
-    #     logging.info(f"Model saved at episode {episode + 1}")
 
     wandb.log(
         {
