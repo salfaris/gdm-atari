@@ -18,6 +18,8 @@ from pydantic import BaseModel, ConfigDict
 
 from model import DQN, ReplayBuffer
 
+torch.manual_seed(44)
+
 
 class CheckpointData(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)  # to handle ReplayBuffer.
