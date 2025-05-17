@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 import pickle
 import random
 import logging
@@ -13,7 +14,22 @@ import torch
 import torch.optim as optim
 import torch.nn as nn
 
+from pydantic import BaseModel, ConfigDict
+
 from model import DQN, ReplayBuffer
+
+
+class CheckpointData(BaseModel):
+    model_config = ConfigDict(arbitrary_types_allowed=True)  # to handle ReplayBuffer.
+
+    model_state_dict: dict
+    target_model_state_dict: dict
+    optimizer_state_dict: dict
+    replay_buffer: ReplayBuffer
+    episode: int
+    step: int
+    best_reward: float
+    epsilon: float
 
 
 LOG_DIR = Path(__file__).resolve().parent / "logs"
@@ -76,43 +92,40 @@ env = FrameStackObservation(env, stack_size=4)  # Stack 4 frames
 action_dim = env.action_space.n
 
 
-def save_checkpoint(
-    model,
-    optimizer,
-    target_model,
-    replay_buffer,
-    episode,
-    step,
-    best_reward,
-    checkpoint_path,
-):
-    checkpoint = {
-        "model_state_dict": model.state_dict(),
-        "optimizer_state_dict": optimizer.state_dict(),
-        "target_model_state_dict": target_model.state_dict(),
-        "replay_buffer": replay_buffer,
-        "episode": episode,
-        "step": step,
-        "best_reward": best_reward,
-    }
+def save_checkpoint(checkpoint_data: CheckpointData, checkpoint_path: Path):
     with open(checkpoint_path, "wb") as f:
-        pickle.dump(checkpoint, f)
-    logging.info(f"Saved checkpoint to {checkpoint_path}")
+        pickle.dump(checkpoint_data.model_dump(), f)
+    checkpoint_print_path = checkpoint_path.relative_to(checkpoint_path.parents[1])
+    logging.info(
+        f"""
+        ------------------------------------------------------------
+        Saved checkpoint to {checkpoint_print_path} with following params:
+        EPISODE: {checkpoint_data.episode}
+        STEP: {checkpoint_data.step:,}
+        BEST REWARD: {checkpoint_data.best_reward}
+        EPSILON: {checkpoint_data.epsilon:.4f}
+        ------------------------------------------------------------
+        """
+    )
 
 
-def load_latest_checkpoint(checkpoint_path: Path, model, optimizer, target_model):
+def load_latest_checkpoint(checkpoint_path: Path):
     with open(checkpoint_path, "rb") as f:
-        checkpoint = pickle.load(f)
-    model.load_state_dict(checkpoint["model_state_dict"])
-    optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
-    target_model.load_state_dict(checkpoint["target_model_state_dict"])
-    replay_buffer = checkpoint["replay_buffer"]
-    episode = checkpoint["episode"]
-    step = checkpoint["step"]
-    best_reward = checkpoint["best_reward"]
-
-    logging.info(f"Loaded checkpoint from {checkpoint_path}")
-    return replay_buffer, episode, step, best_reward
+        raw = pickle.load(f)
+        checkpoint_data = CheckpointData(**raw)
+    checkpoint_print_path = checkpoint_path.relative_to(checkpoint_path.parents[1])
+    logging.info(
+        f"""
+        ---------------------------------------------------------------
+        Loaded checkpoint from {checkpoint_print_path} with following params:
+        EPISODE: {checkpoint_data.episode}
+        STEP: {checkpoint_data.step:,}
+        BEST REWARD: {checkpoint_data.best_reward}
+        EPSILON: {checkpoint_data.epsilon:.4f}
+        ---------------------------------------------------------------
+        """
+    )
+    return checkpoint_data
 
 
 # def load_latest_model(model_dir):
@@ -167,6 +180,30 @@ target_model = DQN(action_dim).to(device)
 
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, eps=1e-4)
 
+# Training loop
+if not CHECKPOINT_PATH.exists():
+    best_reward = float("-inf")
+    start_episode = 0
+    step_count = 0
+    replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
+    epsilon = EPSILON_START
+    logging.info("No checkpoint found, starting fresh.")
+else:
+    checkpoint_data = load_latest_checkpoint(CHECKPOINT_PATH)
+
+    model.load_state_dict(checkpoint_data.model_state_dict)
+    optimizer.load_state_dict(checkpoint_data.optimizer_state_dict)
+    target_model.load_state_dict(checkpoint_data.target_model_state_dict)
+
+    best_reward = checkpoint_data.best_reward
+    # Checkpoint saved at `checkpoint_data.episode`, so naturally, the next start
+    # episode is the next one. E.g. saved at 20, so next start episode is 21.
+    # This avoids saving checkpoint straight after loading checkpoint as well.
+    start_episode = checkpoint_data.episode + 1
+    step_count = checkpoint_data.step
+    replay_buffer = checkpoint_data.replay_buffer
+    epsilon = checkpoint_data.epsilon
+
 
 def train_dqn(
     env,
@@ -205,20 +242,6 @@ def train_dqn(
 
     return loss.item()
 
-
-# Training loop
-if not CHECKPOINT_PATH.exists():
-    best_reward = float("-inf")
-    start_episode = 0
-    step_count = 0
-    replay_buffer = ReplayBuffer(capacity=REPLAY_BUFFER_SIZE)
-    logging.info("No checkpoint found, starting fresh.")
-else:
-    replay_buffer, start_episode, step_count, best_reward = load_latest_checkpoint(
-        CHECKPOINT_PATH, model, optimizer, target_model
-    )
-
-epsilon = EPSILON_START
 
 for episode in range(start_episode, NUM_EPISODES):
     state, _ = env.reset()
@@ -269,18 +292,22 @@ for episode in range(start_episode, NUM_EPISODES):
         logging.info(f"New best model saved with reward: {best_reward}")
 
     # <-- Save checkpoint every 100 episodes
-    if (episode + 1) % 100 == 0:
-        save_checkpoint(
-            model,
-            optimizer,
-            target_model,
-            replay_buffer,
-            episode,
-            step_count,
-            best_reward,
-            CHECKPOINT_PATH,
+    if episode % 10 == 0:
+        checkpoint_data = CheckpointData(
+            model_state_dict=model.state_dict(),
+            optimizer_state_dict=optimizer.state_dict(),
+            target_model_state_dict=target_model.state_dict(),
+            replay_buffer=replay_buffer,
+            episode=episode,
+            step=step_count,
+            best_reward=best_reward,
+            epsilon=epsilon,
         )
-        logging.info(f"Checkpointing at episode {episode + 1}")
+        save_checkpoint(
+            checkpoint_data,
+            checkpoint_path=CHECKPOINT_PATH,
+        )
+        logging.info(f"Checkpointing at episode {episode}")
 
     # # Save the model periodically
     # if (episode + 1) % 100 == 0:
@@ -292,6 +319,6 @@ for episode in range(start_episode, NUM_EPISODES):
     # Log episode statistics
     avg_loss = np.mean(episode_losses) if episode_losses else 0
     logging.info(
-        f"Episode {episode + 1}, Total Reward: {total_reward}, "
+        f"Episode {episode}, Total Reward: {total_reward}, "
         f"Average Loss: {avg_loss:.4f}, Epsilon: {epsilon:.4f}"
     )
