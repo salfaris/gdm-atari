@@ -13,6 +13,7 @@ import torch.optim as optim
 import torch.nn as nn
 
 from pydantic import BaseModel, ConfigDict
+import wandb
 
 from model import DQN, ReplayBuffer
 
@@ -164,7 +165,6 @@ EPSILON_END = 0.01
 EPSILON_DECAY = 0.995  # Slower decay
 MIN_REPLAY_SIZE = 20000  # Minimum experiences before training
 
-
 # Initialize models and replay buffer
 model = DQN(action_dim).to(device)
 target_model = DQN(action_dim).to(device)
@@ -203,6 +203,22 @@ else:
     step_count = checkpoint_data.step
     replay_buffer = checkpoint_data.replay_buffer
     epsilon = checkpoint_data.epsilon
+
+wandb.init(
+    project="pong-rl",
+    id="u9brgpj5",
+    resume="must",  # or "allow"
+    config={
+        "learning_rate": LEARNING_RATE,
+        "batch_size": BATCH_SIZE,
+        "gamma": GAMMA,
+        "replay_buffer_size": REPLAY_BUFFER_SIZE,
+        "epsilon_start": EPSILON_START,
+        "epsilon_end": EPSILON_END,
+        "epsilon_decay": EPSILON_DECAY,
+        "target_update_every": UPDATE_TARGET_EVERY,
+    },
+)
 
 
 def train_dqn(
@@ -288,11 +304,13 @@ for episode in range(start_episode, NUM_EPISODES):
     # Save the model if it's the best so far
     if total_reward > best_reward:
         best_reward = total_reward
-        torch.save(model.state_dict(), MODEL_DIR / "pong_dqn_best.pth")
+        best_model_path = MODEL_DIR / "pong_dqn_best.pth"
+        torch.save(model.state_dict(), best_model_path)
+        wandb.save(str(best_model_path))
         logging.info(f"New best model saved with reward: {best_reward}")
 
     # <-- Save checkpoint every 100 episodes
-    if episode % 10 == 0:
+    if episode % 100 == 0:
         checkpoint_data = CheckpointData(
             model_state_dict=model.state_dict(),
             optimizer_state_dict=optimizer.state_dict(),
@@ -321,4 +339,14 @@ for episode in range(start_episode, NUM_EPISODES):
     logging.info(
         f"Episode {episode}, Total Reward: {total_reward}, "
         f"Average Loss: {avg_loss:.4f}, Epsilon: {epsilon:.4f}"
+    )
+    wandb.log(
+        {
+            "episode": episode,
+            "reward": total_reward,
+            "loss": avg_loss,
+            "epsilon": epsilon,
+            "replay_buffer_size": len(replay_buffer),
+            "steps": step_count,
+        }
     )
