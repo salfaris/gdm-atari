@@ -309,6 +309,13 @@ for episode in range(start_episode, NUM_EPISODES):
         wandb.save(str(best_model_path))
         logging.info(f"New best model saved with reward: {best_reward}")
 
+    # Log episode statistics
+    avg_loss = np.mean(episode_losses) if episode_losses else 0
+    logging.info(
+        f"Episode {episode}, Total Reward: {total_reward}, "
+        f"Average Loss: {avg_loss:.4f}, Epsilon: {epsilon:.4f}"
+    )
+
     # <-- Save checkpoint every 100 episodes
     if episode % 100 == 0:
         checkpoint_data = CheckpointData(
@@ -328,22 +335,18 @@ for episode in range(start_episode, NUM_EPISODES):
         logging.info(f"Checkpointing at episode {episode}")
 
     # # Save the model periodically
+
     # if (episode + 1) % 100 == 0:
     #     torch.save(
     #         model.state_dict(), MODEL_DIR / f"pong_dqn_episode_{episode + 1}.pth"
     #     )
     #     logging.info(f"Model saved at episode {episode + 1}")
 
-    # Log episode statistics
-    avg_loss = np.mean(episode_losses) if episode_losses else 0
-    logging.info(
-        f"Episode {episode}, Total Reward: {total_reward}, "
-        f"Average Loss: {avg_loss:.4f}, Epsilon: {epsilon:.4f}"
-    )
     wandb.log(
         {
             "episode": episode,
             "reward": total_reward,
+            "best_reward": best_reward,
             "loss": avg_loss,
             "epsilon": epsilon,
             "replay_buffer_size": len(replay_buffer),
