@@ -35,13 +35,3 @@ class ReplayBuffer:
 
     def __len__(self):
         return len(self.buffer)
-
-
-def preprocess_frame(frame):
-    """Preprocess the frame: grayscale, resize, normalize."""
-    # frame = np.mean(frame, axis=2)  # Convert to grayscale
-    # frame = frame[35:195]  # Crop the frame to focus on the game area
-    # frame = frame[::2, ::2]  # Downsample to 80x80
-    # frame = np.array(Image.fromarray(frame).resize((84, 84)))
-    frame = frame / 255.0  # Normalize to [0, 1]
-    return frame
